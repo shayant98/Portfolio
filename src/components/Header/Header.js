@@ -1,19 +1,16 @@
 import React from "react";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+
 const Header = ({ toggleMenu, isOpen }) => {
   return (
     <>
       <nav className="bg-navy-normal fixed h-24 w-screen justify-between flex items-center font-mono text-white text-md px-12 ">
-        <Link to="/" className="pl-8">
-          LOGO
-        </Link>
+        <motion.div animate={{ opacity: 2 }}>
+          <Link to="/" className="pl-8">
+            LOGO
+          </Link>
+        </motion.div>
         <div
           className="cursor-pointer lg:hidden"
           onClick={() => {
@@ -35,41 +32,71 @@ const Header = ({ toggleMenu, isOpen }) => {
             />
           </svg>
         </div>
-        <div className="px-8 lg:block hidden">
-          <Link
-            to="home"
-            smooth={true}
-            className=" mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
+        <div className="px-8 hidden lg:block ">
+          <motion.button
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
           >
-            <span className="text-red-400">1.</span> Home
-          </Link>
-          <Link
-            to="work"
-            smooth={true}
-            className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
+            <Link
+              to="home"
+              smooth={true}
+              className=" mx-7 hover:text-red-400 cursor-pointer transition ease-in duration-300 cursor-pointer"
+            >
+              <span className="text-red-400">1.</span> Home
+            </Link>
+          </motion.button>
+          <motion.button
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 1 }}
           >
-            <span className="text-red-400">2.</span> Experience
-          </Link>
-          <Link
-            to="projects"
-            smooth={true}
-            className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
+            <Link
+              to="work"
+              smooth={true}
+              className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
+            >
+              <span className="text-red-400">2.</span> Work
+            </Link>
+          </motion.button>
+          <motion.button
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 0.4 }}
           >
-            <span className="text-red-400">3.</span> Projects
-          </Link>
-          <Link
-            to="contact"
-            smooth={true}
-            className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
+            <motion.button
+              animate={{ opacity: [0, 1] }}
+              transition={{ duration: 1.5 }}
+            >
+              <Link
+                to="projects"
+                smooth={true}
+                className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
+              >
+                <span className="text-red-400">4.</span> Experience
+              </Link>
+            </motion.button>
+          </motion.button>
+          <motion.button
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 2 }}
           >
-            <span className="text-red-400">4.</span> Contact
-          </Link>
-          <a
-            href="/"
-            className="px-6 py-4 border-solid border-2 rounded-md border-red-400 text-red-400 hover:bg-red-400 hover:bg-opacity-25 transition ease-in duration-300 after:empty-content after:w-1 after:h-12 after:bg-white"
+            <Link
+              to="contact"
+              smooth={true}
+              className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
+            >
+              <span className="text-red-400">4.</span> Contact
+            </Link>
+          </motion.button>
+          <motion.button
+            animate={{ opacity: [0, 1] }}
+            transition={{ duration: 2.5 }}
           >
-            Resume
-          </a>
+            <a
+              href="/"
+              className="px-6 py-4 border-solid border-2 rounded-sm border-red-400 text-red-400 hover:bg-red-400 hover:bg-opacity-25 transition ease-in duration-300 after:empty-content after:w-1 after:h-12 after:bg-white"
+            >
+              Resume
+            </a>
+          </motion.button>
         </div>
       </nav>
     </>

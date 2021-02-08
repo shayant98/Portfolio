@@ -6,7 +6,9 @@ const SectionContainer = ({ children, count, title = "", full = false }) => {
     <section
       className={`flex flex-col  items-start ${
         count === 0 && "lg:justify-center"
-      } ${full && "min-h-screen"} ${count !== 0 && "mt-10 lg:mt-40"}`}
+      } ${full && "min-h-screen"} ${
+        count !== 0 && count !== 1 && "mt-10 lg:mt-40"
+      }`}
     >
       {count !== 0 && <Title count={count} title={title} />}
       {children}
