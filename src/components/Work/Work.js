@@ -11,17 +11,15 @@ const Work = () => {
     {
       name: "Tres Amigos Development",
     },
-    {
-      name: "HDF Consulting",
-    },
   ];
   return (
-    <div className="flex flex-row gap-8">
-      <div className="flex-auto">
-        <ul>
+    <div className=" lg:flex flex-col lg:flex-row gap-8">
+      <div className="">
+        <ul className="inline-flex lg:block">
           {work.map((work, index) => (
             <li
-              className={`py-2 px-3 text-blue-200 m-0 p-0  rounded-sm border-l-2 cursor-pointer ${
+              key={index}
+              className={`py-2 px-3 text-blue-200 m-0 p-0  rounded-sm border-t-2 lg:border-l-2 lg:border-t-0 cursor-pointer ${
                 index === 0 ? "border-red-400" : "border-blue-200"
               } hover:bg-red-400  hover:border-red-400  hover:text-white transition delay-200 ease-in`}
             >
@@ -30,7 +28,7 @@ const Work = () => {
           ))}
         </ul>
       </div>
-      <div className="flex-auto">
+      <div className="flex-auto mt-5 lg:mt-0">
         <h3 className="text-blue-100 text-xl">
           Developer <span className="text-red-400">@ Telesur</span>
         </h3>

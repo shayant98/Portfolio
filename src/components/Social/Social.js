@@ -1,21 +1,22 @@
 import React from "react";
-
+import FeatherIcon from "feather-icons-react";
 const Social = () => {
   return (
     <div
-      className="fixed left text-white bottom-0 left-5 w-12 z-10"
+      className="fixed left text-white bottom-0 left-5 w-12 z-10 hidden md:block"
       aria-orientation="vertical"
     >
       <div className="flex flex-col items-center relative">
         <ul>
           <a
-            href="/"
-            className="hover:text-blue-400 transition ease-in duration-100"
+            href="https://github.com/shayant98"
+            className="hover:text-red-400 transition ease-in duration-300"
           >
             <li className="py-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
+                width="1.8rem"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -29,13 +30,13 @@ const Social = () => {
             </li>
           </a>
           <a
-            href="/"
-            className="hover:text-blue-400 transition ease-in duration-100"
+            href="https://linkedin.com/in/shayant-sital"
+            className="hover:text-red-400 transition ease-in duration-300"
           >
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="2rem"
+                width="1.8rem"
                 role="img"
                 viewBox="0 0 24 24"
                 fill="none"
@@ -52,7 +53,7 @@ const Social = () => {
             </li>
           </a>
         </ul>
-        <div className="h-32 border-l-2 border-white text-center mt-4 border-navy-light"></div>
+        <div className="h-32 border-l-2 border-white text-center mt-4 border-blue-200"></div>
       </div>
     </div>
   );

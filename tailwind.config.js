@@ -16,6 +16,18 @@ module.exports = {
       sans: "Nunito, San Francisco, sans-serif",
       mono: "Ubuntu Mono, San Francisco, sans-serif",
     },
+    filter: {
+      // defaults to {}
+      none: "none",
+      grayscale: "grayscale(1)",
+      invert: "invert(1)",
+      sepia: "sepia(1)",
+    },
+    backdropFilter: {
+      // defaults to {}
+      none: "none",
+      blur: "blur(20px)",
+    },
   },
   variants: {
     extend: {
@@ -23,9 +35,9 @@ module.exports = {
     },
   },
   plugins: [
-    require("feather-icons"),
     require("tailwindcss-writing-mode")({
       variants: ["responsive", "hover"],
     }),
+    require("tailwindcss-filters"),
   ],
 };

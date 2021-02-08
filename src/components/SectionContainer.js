@@ -4,9 +4,9 @@ import Title from "./Title";
 const SectionContainer = ({ children, count, title = "", full = false }) => {
   return (
     <section
-      className={`py-40 flex flex-col  items-start ${
-        count === 0 && "justify-center"
-      } ${full && "min-h-screen"}`}
+      className={`flex flex-col  items-start ${
+        count === 0 && "lg:justify-center"
+      } ${full && "min-h-screen"} ${count !== 0 && "mt-10 lg:mt-40"}`}
     >
       {count !== 0 && <Title count={count} title={title} />}
       {children}
