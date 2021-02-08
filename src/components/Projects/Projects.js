@@ -38,10 +38,32 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col justify-center items-center">
       {projects.map((project, index) => (
         <Project key={index} flip={index % 2 === 0} project={project} />
       ))}
+      <div className="mt-20">
+        <a
+          href="https://github.com/shayant98?tab=repositories"
+          className="flex items-center justify-between w-48 px-4  items-center py-3 border-solid border-2 rounded-sm border-red-400 text-red-400 hover:bg-red-400 hover:bg-opacity-25 transition ease-in duration-300 after:empty-content after:w-1 after:h-12 after:bg-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            viewBox="0 0 24 24"
+            fill="none"
+            width="1rem"
+            stroke="currentColor"
+            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            class="feather feather-folder"
+          >
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+          </svg>{" "}
+          <span> Visit the Archive</span>
+        </a>
+      </div>
     </div>
   );
 };
