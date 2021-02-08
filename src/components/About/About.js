@@ -42,7 +42,7 @@ const About = () => {
           alt="headhsot"
           className="z-10 relative h-full object-cover rounded-sm"
         />
-        <div className="h-full w-full z-0 absolute top-0 z-20 bg-opacity-75 bg-red-400 rounded-sm group-hover:bg-opacity-0 transition ease-in duration-300"></div>
+        <div className="h-full w-full z-0 absolute top-0 z-20 bg-opacity-75 bg-navy-light rounded-sm group-hover:bg-opacity-0 transition ease-in duration-300"></div>
         <div className="h-full w-full z-0 absolute top-4 left-4 lg:top-10 lg:left-10 border-4 border-navy-light rounded-sm group-hover:border-red-400  transition ease-in duration-400"></div>
       </div>
     </div>
