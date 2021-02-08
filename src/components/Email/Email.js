@@ -9,7 +9,7 @@ const Email = () => {
       <div className="flex flex-col items-center relative">
         <a
           href="mailto:shayant98@gmail.com"
-          className="writing-mode-vertical font-mono text-xs leading-5 tracking-widest hover:text-red-400 transition delay-300 ease-in"
+          className="writing-mode-vertical text-navy-light font-mono text-md leading-5 tracking-widest hover:text-red-400 transition delay-300 ease-in"
         >
           shayant98@gmail.com
         </a>

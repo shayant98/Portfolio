@@ -9,7 +9,7 @@ const Social = () => {
         <ul>
           <a
             href="https://github.com/shayant98"
-            className="hover:text-red-400 transition ease-in duration-300"
+            className="hover:text-red-400 transition ease-in duration-300 text-navy-light"
           >
             <li className="py-4">
               <svg

@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   const technologies = [
     "Javascript (ES6+)",
-    "HTML &amp; (S)CSS",
+    "HTML & (S)CSS",
     "React",
     "Next.Js",
     "Node.Js",
@@ -36,7 +36,7 @@ const About = () => {
           ))}
         </ul>
       </div>
-      <div className="group relative h-64 lg:h-80 w-max place-self-center cursor-pointer transition ease-in duration-100">
+      <div className="group relative h-40 md:h-64 lg:h-80 w-max place-self-center cursor-pointer transition ease-in duration-100">
         <img
           src="https://loremflickr.com/640/360"
           alt="headhsot"

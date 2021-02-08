@@ -9,31 +9,19 @@ const Projects = () => {
       url: "https://covid19trackershayant.herokuapp.com/",
       description:
         "My goal is to always build products that provide pixel-perfect, performant experiences. My goal is to always build products that provide pixel-perfect, performant experiences.",
-      technologies: ["Next.Js", "Next.Js", "Next.Js", "Next.Js", "Next.Js"],
+      technologies: ["Next.Js", "Next.Js", "Next.Js", "Next.Js"],
     },
     {
       title: "Covid 19 tracker 2",
       description:
         "My goal is to always build products that provide pixel-perfect, performant experiences. My goal is to always build products that provide pixel-perfect, performant experiences.",
-      technologies: [
-        "Javascript (ES6+)",
-        "HTML & (S)CSS",
-        "React",
-        "Next.Js",
-        "Node.Js",
-      ],
+      technologies: ["Javascript (ES6+)", "React", "Next.Js", "Node.Js"],
     },
     {
       title: "Covid 19 tracker 3",
       description:
         "My goal is to always build products that provide pixel-perfect, performant experiences. My goal is to always build products that provide pixel-perfect, performant experiences.",
-      technologies: [
-        "Javascript (ES6+)",
-        "HTML & (S)CSS",
-        "React",
-        "Next.Js",
-        "Node.Js",
-      ],
+      technologies: ["Javascript (ES6+)", "React", "Next.Js", "Node.Js"],
     },
   ];
 
@@ -54,10 +42,10 @@ const Projects = () => {
             fill="none"
             width="1rem"
             stroke="currentColor"
-            stroke-width="2"
+            strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            class="feather feather-folder"
+            className="feather feather-folder"
           >
             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
           </svg>{" "}

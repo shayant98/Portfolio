@@ -17,7 +17,7 @@ const Container = () => {
     >
       <Header isOpen={menuOpen} toggleMenu={setMenuOpen} />
 
-      <Sidemenu isOpen={menuOpen} />
+      <Sidemenu isOpen={menuOpen} toggleMenu={setMenuOpen} />
       <Social />
       <Main />
       <Footer />
