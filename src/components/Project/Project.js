@@ -37,7 +37,7 @@ const Project = ({ project, flip = false }) => {
             alt="headhsot"
             className="rounded-sm h-80 object-cover rounded-sm"
           />
-          <div className="h-full w-full absolute top-0 bg-opacity-50 bg-red-400 rounded-sm group-hover:bg-opacity-0 transition ease-in duration-100"></div>
+          <div className="h-full w-full absolute top-0 bg-opacity-50 bg-navy-normal rounded-sm group-hover:bg-opacity-0 transition ease-in duration-100"></div>
         </div>
         <div
           className={`transform ${
@@ -54,7 +54,7 @@ const Project = ({ project, flip = false }) => {
           >
             {project.title}
           </p>
-          <div className="py-5 px-7 bg-navy-light text-blue-200 rounded-sm  justify-end max-w-xl shadow-md hover:shadow-xl transition ease-in duration-100">
+          <div className="py-5 px-7 bg-navy-light text-blue-200 rounded-  justify-end max-w-xl shadow-md hover:shadow-xl transition ease-in duration-100">
             <p className="leading-6 tracking-wide text-md ">
               {project.description}
             </p>
