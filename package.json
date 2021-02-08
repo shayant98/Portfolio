@@ -9,7 +9,6 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
     "autoprefixer": "^9.8.6",
-    "feather-icons-react": "^0.4.3",
     "framer-motion": "^3.3.0",
     "postcss": "^7.0.35",
     "react": "^17.0.1",
@@ -17,8 +16,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
     "react-scroll": "^1.8.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-    "web-vitals": "^1.1.0"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "scripts": {
     "start": "craco start",
@@ -45,8 +43,6 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss-css-filters": "^2.0.0",
-    "tailwindcss-filters": "^3.0.0",
     "tailwindcss-pseudo-elements": "^1.5.1",
     "tailwindcss-writing-mode": "^1.0.0"
   }
