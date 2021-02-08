@@ -1,5 +1,4 @@
 import React from "react";
-import FeatherIcon from "feather-icons-react";
 const Social = () => {
   return (
     <div
