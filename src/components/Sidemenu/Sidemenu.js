@@ -24,12 +24,18 @@ const Sidemenu = ({ isOpen, toggleMenu }) => {
   ];
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: isOpen ? 1 : 0 }}>
+    <motion.div
+      initial={{ opacity: 0, visibility: "hidden" }}
+      animate={{
+        opacity: isOpen ? 1 : 0,
+        visibility: isOpen ? "visible" : "hidden",
+      }}
+    >
       <div className="bg-navy-normal opacity-75 min-h-screen h-full w-full absolute  right-0  z-40 shadow-lg "></div>
       <div className="bg-navy-normal  min-h-screen h-full w-1/2 absolute  right-0  z-40 shadow-lg ">
         <div className="py-28 px-5 flex flex-col h-screen  items-center text-blue-200 text-xl md:text-3xl justify-around">
           {menuOptions.map((option, index) => (
-            <motion.div key={index}>
+            <div key={index}>
               <Link
                 to={option.to}
                 smooth={true}
@@ -39,7 +45,7 @@ const Sidemenu = ({ isOpen, toggleMenu }) => {
                 <span className="text-red-400">{index + 1}.</span>{" "}
                 {option.title}
               </Link>
-            </motion.div>
+            </div>
           ))}
           <a
             href="/"

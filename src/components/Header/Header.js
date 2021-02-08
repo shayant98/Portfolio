@@ -50,7 +50,7 @@ const Header = ({ toggleMenu, isOpen }) => {
           )}
         </div>
         <div className="px-8 hidden lg:block ">
-          <motion.div
+          <motion.button
             animate={{ opacity: [0, 1] }}
             transition={{ duration: 0.5 }}
           >
@@ -61,8 +61,8 @@ const Header = ({ toggleMenu, isOpen }) => {
             >
               <span className="text-red-400">1.</span> Home
             </Link>
-          </motion.div>
-          <motion.div
+          </motion.button>
+          <motion.button
             animate={{ opacity: [0, 1] }}
             transition={{ duration: 1 }}
           >
@@ -73,12 +73,12 @@ const Header = ({ toggleMenu, isOpen }) => {
             >
               <span className="text-red-400">2.</span> Work
             </Link>
-          </motion.div>
-          <motion.div
+          </motion.button>
+          <motion.button
             animate={{ opacity: [0, 1] }}
             transition={{ duration: 0.4 }}
           >
-            <motion.div
+            <motion.button
               animate={{ opacity: [0, 1] }}
               transition={{ duration: 1.5 }}
             >
@@ -89,9 +89,9 @@ const Header = ({ toggleMenu, isOpen }) => {
               >
                 <span className="text-red-400">4.</span> Experience
               </Link>
-            </motion.div>
-          </motion.div>
-          <motion.div
+            </motion.button>
+          </motion.button>
+          <motion.button
             animate={{ opacity: [0, 1] }}
             transition={{ duration: 2 }}
           >
@@ -102,8 +102,8 @@ const Header = ({ toggleMenu, isOpen }) => {
             >
               <span className="text-red-400">4.</span> Contact
             </Link>
-          </motion.div>
-          <motion.div
+          </motion.button>
+          <motion.button
             animate={{ opacity: [0, 1] }}
             transition={{ duration: 2.5 }}
           >
@@ -113,7 +113,7 @@ const Header = ({ toggleMenu, isOpen }) => {
             >
               Resume
             </a>
-          </motion.div>
+          </motion.button>
         </div>
       </nav>
     </>
