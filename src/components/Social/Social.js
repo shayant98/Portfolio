@@ -5,17 +5,17 @@ const Social = () => {
       className="fixed left text-white bottom-0 left-5 w-12 z-10 hidden md:block"
       aria-orientation="vertical"
     >
-      <div className="flex flex-col items-center relative">
+      <div className="flex flex-col items-center relative text-navy-light">
         <ul>
           <a
             href="https://github.com/shayant98"
-            className="hover:text-red-400 transition ease-in duration-300 text-navy-light"
+            className="hover:text-red-400 transition ease-in duration-300 "
           >
             <li className="py-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
-                width="1.8rem"
+                width="40px"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -30,12 +30,12 @@ const Social = () => {
           </a>
           <a
             href="https://linkedin.com/in/shayant-sital"
-            className="hover:text-red-400 transition ease-in duration-300"
+            className="hover:text-red-400 transition ease-in duration-300 "
           >
             <li>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="1.8rem"
+                width="40px"
                 role="img"
                 viewBox="0 0 24 24"
                 fill="none"
