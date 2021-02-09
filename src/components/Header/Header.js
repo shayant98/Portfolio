@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import Button from "../Button";
+import HeaderOption from "./HeaderOption";
 
 const Header = ({ toggleMenu, isOpen }) => {
   const menuOptions = [
@@ -91,16 +92,7 @@ const Header = ({ toggleMenu, isOpen }) => {
           className="px-8 hidden lg:block "
         >
           {menuOptions.map((option, index) => (
-            <motion.button key={index} variants={variants}>
-              <Link
-                to={option.to}
-                smooth={true}
-                className=" mx-7 hover:text-red-400 cursor-pointer transition ease-in duration-300 cursor-pointer"
-              >
-                <span className="text-red-400">0{index + 1}.</span>{" "}
-                {option.title}
-              </Link>
-            </motion.button>
+            <HeaderOption option={option} index={index} variants={variants} />
           ))}
           <motion.button href="#" variants={variants}>
             <Button title="Resume" />
