@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import WorkListItem from "./WorkList/WorkListItem";
 import WorkList from "./WorkList/WorkList";
 import WorkDetails from "./WorkDetails/WorkDetails";
 
