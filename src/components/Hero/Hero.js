@@ -43,7 +43,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.5 }}
-          href="#"
+          href="mailto:shayant98@gmail.com"
         >
           <Button
             title="Get in touch"

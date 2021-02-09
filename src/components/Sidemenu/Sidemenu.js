@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 
 import { motion, AnimatePresence } from "framer-motion";
+import Button from "../Button";
 
 const Sidemenu = ({ isOpen, toggleMenu }) => {
   const menuOptions = [
@@ -71,12 +72,9 @@ const Sidemenu = ({ isOpen, toggleMenu }) => {
                   </Link>
                 </motion.div>
               ))}
-              <a
-                href="/"
-                className="px-6 py-4 border-solid border-2 rounded-md border-red-400 text-red-400 hover:bg-red-400 hover:bg-opacity-25 transition ease-in duration-300 after:empty-content after:w-1 after:h-12 after:bg-white"
-              >
-                Resume
-              </a>
+              <motion.a href="#" name="resumeLink">
+                <Button title="Resume" />
+              </motion.a>
             </div>
           </motion.div>
         </motion.div>

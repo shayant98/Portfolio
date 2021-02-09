@@ -100,6 +100,7 @@ const Header = ({ toggleMenu, isOpen }) => {
             </Link>
           </motion.button>
           <motion.a
+            href="#"
             animate={{ opacity: [0, 1] }}
             transition={{ duration: 2.5 }}
           >

@@ -40,7 +40,7 @@ const Contact = () => {
         is always open. Whether you have a question or just want to say hi, I'll
         try my best to get back to you!
       </motion.p>
-      <motion.a className="py-8" href="#">
+      <motion.a className="py-8" href="mailto:shayant98@gmail.com">
         <Button
           title="Get in touch"
           icon={
