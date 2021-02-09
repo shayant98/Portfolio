@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import Button from "../Button";
 
 const Header = ({ toggleMenu, isOpen }) => {
   return (
@@ -98,17 +99,12 @@ const Header = ({ toggleMenu, isOpen }) => {
               <span className="text-red-400">04.</span> Contact
             </Link>
           </motion.button>
-          <motion.button
+          <motion.a
             animate={{ opacity: [0, 1] }}
             transition={{ duration: 2.5 }}
           >
-            <a
-              href="/"
-              className="px-6 py-4 border-solid border-2 rounded-sm border-red-400 text-red-400 hover:bg-red-400 hover:bg-opacity-25 transition ease-in duration-300 after:empty-content after:w-1 after:h-12 after:bg-white"
-            >
-              Resume
-            </a>
-          </motion.button>{" "}
+            <Button title="Resume" />
+          </motion.a>{" "}
         </div>
       </nav>
     </>
