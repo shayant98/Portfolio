@@ -7,7 +7,7 @@ import Button from "../Button";
 const Sidemenu = ({ isOpen, toggleMenu }) => {
   const menuOptions = [
     {
-      title: "Home",
+      title: "About",
       to: "home",
     },
     {

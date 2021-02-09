@@ -4,6 +4,40 @@ import { motion } from "framer-motion";
 import Button from "../Button";
 
 const Header = ({ toggleMenu, isOpen }) => {
+  const menuOptions = [
+    {
+      title: "About",
+      to: "home",
+    },
+    {
+      title: "Experience",
+      to: "work",
+    },
+    {
+      title: "Projects",
+      to: "projects",
+    },
+    {
+      title: "Contact",
+      to: "contact",
+    },
+  ];
+
+  const variants = {
+    hidden: {
+      y: "-100vh",
+    },
+    visible: {
+      y: "0",
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+        type: "tween",
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
     <>
       <nav className="bg-navy-normal fixed h-16 lg:h-24 w-screen justify-between flex items-center font-mono text-white text-md px-3 lg:px-12 z-50">
@@ -50,63 +84,28 @@ const Header = ({ toggleMenu, isOpen }) => {
             </svg>
           )}
         </div>
-        <div className="px-8 hidden lg:block ">
-          <motion.button
-            animate={{ opacity: [0, 1] }}
-            transition={{ duration: 0.5 }}
-          >
-            <Link
-              to="about"
-              smooth={true}
-              className=" mx-7 hover:text-red-400 cursor-pointer transition ease-in duration-300 cursor-pointer"
-            >
-              <span className="text-red-400">01.</span> About
-            </Link>
-          </motion.button>
-          <motion.button
-            animate={{ opacity: [0, 1] }}
-            transition={{ duration: 1 }}
-          >
-            <Link
-              to="work"
-              smooth={true}
-              className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
-            >
-              <span className="text-red-400">02.</span> Work
-            </Link>
-          </motion.button>
-          <motion.button
-            animate={{ opacity: [0, 1] }}
-            transition={{ duration: 1.5 }}
-          >
-            <Link
-              to="projects"
-              smooth={true}
-              className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
-            >
-              <span className="text-red-400">03.</span> Experience
-            </Link>
-          </motion.button>
-          <motion.button
-            animate={{ opacity: [0, 1] }}
-            transition={{ duration: 2 }}
-          >
-            <Link
-              to="contact"
-              smooth={true}
-              className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
-            >
-              <span className="text-red-400">04.</span> Contact
-            </Link>
-          </motion.button>
-          <motion.a
-            href="#"
-            animate={{ opacity: [0, 1] }}
-            transition={{ duration: 2.5 }}
-          >
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          className="px-8 hidden lg:block "
+        >
+          {menuOptions.map((option, index) => (
+            <motion.button key={index} variants={variants}>
+              <Link
+                to={option.to}
+                smooth={true}
+                className=" mx-7 hover:text-red-400 cursor-pointer transition ease-in duration-300 cursor-pointer"
+              >
+                <span className="text-red-400">0{index + 1}.</span>{" "}
+                {option.title}
+              </Link>
+            </motion.button>
+          ))}
+          <motion.button href="#" variants={variants}>
             <Button title="Resume" />
-          </motion.a>{" "}
-        </div>
+          </motion.button>{" "}
+        </motion.div>
       </nav>
     </>
   );
