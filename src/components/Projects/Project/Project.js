@@ -83,7 +83,7 @@ const Project = ({ project, flip = false }) => {
         </div>
       </div>
       {/* Large Screen */}
-      <div className="group relative  h-max mt-24 cursor-pointer hidden xl:flex ">
+      <div className="group relative  h-max mb-24 cursor-pointer hidden xl:flex ">
         <motion.div
           whileHover={{ y: 10 }}
           className={`relative z-0  hover:filter-none  ${flip && "order-last"}`}
