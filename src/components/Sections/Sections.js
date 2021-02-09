@@ -6,7 +6,7 @@ import Projects from "../Projects/Projects";
 import SectionContainer from "../SectionContainer";
 import Work from "../Work/Work";
 
-const Main = () => {
+const Sections = () => {
   return (
     <main className=" px-10 md:px-20 lg:px-40 m-auto min-h-screen max-w-screen-2xl w-full overflow-hidden flex flex-col">
       <div id="home">
@@ -41,4 +41,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Sections;

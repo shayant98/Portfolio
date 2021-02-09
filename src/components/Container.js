@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Email from "./Email/Email";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
-import Main from "./Main/Main";
+import Sections from "./Sections/Sections";
 import Sidemenu from "./Sidemenu/Sidemenu";
 import Social from "./Social/Social";
 
@@ -19,7 +19,7 @@ const Container = () => {
 
       <Sidemenu isOpen={menuOpen} toggleMenu={setMenuOpen} />
       <Social />
-      <Main />
+      <Sections />
       <Footer />
       <Email />
     </div>
