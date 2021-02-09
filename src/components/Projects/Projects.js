@@ -49,6 +49,7 @@ const Projects = () => {
     <div className="w-full flex flex-col justify-center items-center">
       {projects.map((project, index) => (
         <motion.div
+          key={index}
           custom={index}
           ref={ref}
           initial="hidden"
@@ -68,7 +69,7 @@ const Projects = () => {
             role="img"
             viewBox="0 0 24 24"
             fill="none"
-            width="1rem"
+            width="20px"
             stroke="currentColor"
             strokeWidth="2"
             strokeLinecap="round"

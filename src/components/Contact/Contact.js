@@ -18,7 +18,7 @@ const Contact = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          width="1rem"
+          width="20px"
           viewBox="0 0 24 24"
           stroke="currentColor"
         >

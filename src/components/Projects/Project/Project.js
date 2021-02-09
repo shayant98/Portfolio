@@ -37,7 +37,7 @@ const Project = ({ project, flip = false }) => {
               >
                 <svg
                   role="img"
-                  width="1.5rem"
+                  width="20px"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -60,7 +60,7 @@ const Project = ({ project, flip = false }) => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
-                  width="1.8rem"
+                  width="20px"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -129,7 +129,7 @@ const Project = ({ project, flip = false }) => {
               >
                 <svg
                   role="img"
-                  width="1.8rem"
+                  width="25px"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -152,7 +152,7 @@ const Project = ({ project, flip = false }) => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
-                  width="1.8rem"
+                  width="25px"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"

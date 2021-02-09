@@ -117,8 +117,8 @@ const Work = () => {
           {work[selectedJob].start} - {work[selectedJob].end ?? "present"}
         </motion.p>
         <ul className=" py-3 text-blue-200">
-          {work[selectedJob].keyPoints.map((point) => (
-            <motion.li className="py-3 max-w-lg">
+          {work[selectedJob].keyPoints.map((point, index) => (
+            <motion.li key={index} className="py-3 max-w-lg">
               <span className="text-red-400 mr-2">▹</span> {point}
             </motion.li>
           ))}

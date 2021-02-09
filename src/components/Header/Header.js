@@ -76,20 +76,15 @@ const Header = ({ toggleMenu, isOpen }) => {
           </motion.button>
           <motion.button
             animate={{ opacity: [0, 1] }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 1.5 }}
           >
-            <motion.button
-              animate={{ opacity: [0, 1] }}
-              transition={{ duration: 1.5 }}
+            <Link
+              to="projects"
+              smooth={true}
+              className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
             >
-              <Link
-                to="projects"
-                smooth={true}
-                className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
-              >
-                <span className="text-red-400">4.</span> Experience
-              </Link>
-            </motion.button>
+              <span className="text-red-400">4.</span> Experience
+            </Link>
           </motion.button>
           <motion.button
             animate={{ opacity: [0, 1] }}
@@ -113,7 +108,7 @@ const Header = ({ toggleMenu, isOpen }) => {
             >
               Resume
             </a>
-          </motion.button>
+          </motion.button>{" "}
         </div>
       </nav>
     </>
