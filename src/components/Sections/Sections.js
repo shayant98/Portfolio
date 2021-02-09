@@ -3,7 +3,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Hero from "../Hero/Hero";
 import Projects from "../Projects/Projects";
-import SectionContainer from "../SectionContainer";
+import SectionContainer from "./SectionContainer";
 import Work from "../Work/Work";
 
 const Sections = () => {

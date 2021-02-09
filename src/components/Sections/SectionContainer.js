@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "./Title";
+import Title from "../Title";
 
 const SectionContainer = ({ children, count, title = "", full = false }) => {
   return (
