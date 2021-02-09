@@ -66,7 +66,7 @@ const Sidemenu = ({ isOpen, toggleMenu }) => {
                     className="cursor-pointer"
                     onClick={() => toggleMenu(false)}
                   >
-                    <span className="text-red-400">{index + 1}.</span>{" "}
+                    <span className="text-red-400">0{index + 1}.</span>{" "}
                     {option.title}
                   </Link>
                 </motion.div>

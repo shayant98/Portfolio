@@ -55,11 +55,11 @@ const Header = ({ toggleMenu, isOpen }) => {
             transition={{ duration: 0.5 }}
           >
             <Link
-              to="home"
+              to="about"
               smooth={true}
               className=" mx-7 hover:text-red-400 cursor-pointer transition ease-in duration-300 cursor-pointer"
             >
-              <span className="text-red-400">1.</span> Home
+              <span className="text-red-400">01.</span> About
             </Link>
           </motion.button>
           <motion.button
@@ -71,7 +71,7 @@ const Header = ({ toggleMenu, isOpen }) => {
               smooth={true}
               className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
             >
-              <span className="text-red-400">2.</span> Work
+              <span className="text-red-400">02.</span> Work
             </Link>
           </motion.button>
           <motion.button
@@ -83,7 +83,7 @@ const Header = ({ toggleMenu, isOpen }) => {
               smooth={true}
               className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
             >
-              <span className="text-red-400">4.</span> Experience
+              <span className="text-red-400">03.</span> Experience
             </Link>
           </motion.button>
           <motion.button
@@ -95,7 +95,7 @@ const Header = ({ toggleMenu, isOpen }) => {
               smooth={true}
               className="mx-7 hover:text-red-400 transition ease-in duration-300 cursor-pointer"
             >
-              <span className="text-red-400">4.</span> Contact
+              <span className="text-red-400">04.</span> Contact
             </Link>
           </motion.button>
           <motion.button

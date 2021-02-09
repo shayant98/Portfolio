@@ -1,25 +1,29 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Project = ({ project, flip = false }) => {
   return (
     <>
       {/* /Mobile Design */}
-      <div className="group flex relative h-max pt-4 cursor-pointer lg:hidden">
+      <div className="group flex align-center relative h-max pt-4 cursor-pointer lg:hidden">
         <div className={`relative z-0 ${flip && "order-last"}`}>
           <img
             src="./images/covid.png"
             alt="headhsot"
-            className="h-80 object-cover rounded-sm"
+            className="filter-grayscale h-80 object-cover rounded-sm"
           />
-          <div className="h-full w-full absolute top-0 bg-opacity-75 bg-navy-normal rounded-sm group-hover:bg-opacity-0 transition ease-in duration-100"></div>
+          <div className="h-full w-full absolute top-0 bg-opacity-50 bg-red-500 rounded-sm"></div>
+          <div className="h-full w-full absolute top-0 bg-opacity-75 bg-gray-900 rounded-sm"></div>
         </div>
 
-        <div className="absolute z-40 p-4 w-full">
-          <p className={`text-red-400 justify-self-end`}>Featured Project</p>
+        <div
+          className={`absolute z-40 p-4 md:p-8 w-full ${flip && "text-right"}`}
+        >
+          <p className={`text-red-400 justify-self-end `}>Featured Project</p>
           <p className={`text-blue-200 text-2xl  font-bold py-3 `}>
             {project.title}
           </p>
-          <p className="leading-6 tracking-wide text-sm text-blue-200 w-64">
+          <p className="leading-6 tracking-wide text-sm text-blue-200">
             {project.description}
           </p>
           <ul className="inline-flex space-x-4 text-blue-200 font-mono text-xs mt-4">
@@ -80,17 +84,27 @@ const Project = ({ project, flip = false }) => {
       </div>
       {/* Large Screen */}
       <div className="group relative  h-max mt-24 cursor-pointer hidden xl:flex ">
-        <div className={`relative z-0 ${flip && "order-last"}`}>
-          <img
+        <motion.div
+          whileHover={{ y: 10 }}
+          className={`relative z-0  hover:filter-none  ${flip && "order-last"}`}
+        >
+          <motion.div
+            className={`h-full w-full absolute top-4 ${
+              flip ? "left-4" : "right-4"
+            } border-4  border-red-400  rounded-sm transition ease-in duration-400`}
+          ></motion.div>
+
+          <motion.img
             src="./images/covid.png"
             alt="headhsot"
-            className="rounded-sm h-80 object-cover rounded-sm"
+            className="filter-grayscale rounded-sm h-96 object-cover relative rounded-sm object-cover"
           />
-          <div className="h-full w-full absolute top-0 bg-opacity-50 bg-navy-normal rounded-sm group-hover:bg-opacity-0 transition ease-in duration-100"></div>
-        </div>
+
+          <div className="h-full w-full absolute top-0 bg-opacity-50 bg-navy-normal  backdrop-grayscale  hover:filter-none  rounded-sm group-hover:bg-opacity-0 transition ease-in duration-100"></div>
+        </motion.div>
         <div
           className={`transform ${
-            flip ? "translate-x-16" : "-translate-x-16"
+            flip ? "translate-x-24" : "-translate-x-24"
           } z-10`}
         >
           <p className={`text-red-400 ${!flip && "text-right"}`}>
@@ -103,13 +117,13 @@ const Project = ({ project, flip = false }) => {
           >
             {project.title}
           </p>
-          <div className="py-5 px-7 bg-navy-light text-blue-200 rounded-  justify-end max-w-xl shadow-md hover:shadow-xl transition ease-in duration-100">
-            <p className="leading-6 tracking-wide text-md ">
+          <div className="py-6 px-8 bg-navy-light text-blue-200 rounded-sm justify-end max-w-xl shadow-xl hover:shadow-2xl transition ease-in duration-100">
+            <p className="leading-7 tracking-wide text-md ">
               {project.description}
             </p>
           </div>
           <div
-            className={`py-3  font-mono text-blue-200 text-sm ${
+            className={`py-6  font-mono text-navy-light  ${
               !flip && "text-right"
             }`}
           >

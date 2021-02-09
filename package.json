@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "tailwindcss-filters": "^3.0.0",
     "tailwindcss-pseudo-elements": "^1.5.1",
     "tailwindcss-writing-mode": "^1.0.0"
   }
