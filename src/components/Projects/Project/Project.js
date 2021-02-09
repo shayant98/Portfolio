@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Project = ({ project, flip = false }) => {
   return (
@@ -7,7 +8,7 @@ const Project = ({ project, flip = false }) => {
       {/* /Mobile Design */}
       <div className="group flex align-center relative h-max pt-4 cursor-pointer lg:hidden">
         <div className={`relative z-0 ${flip && "order-last"}`}>
-          <img
+          <LazyLoadImage
             src="./images/covid.png"
             alt="headhsot"
             className="filter-grayscale h-80 object-cover rounded-sm"
@@ -94,10 +95,10 @@ const Project = ({ project, flip = false }) => {
             } border-4  border-red-400  rounded-sm transition ease-in duration-400`}
           ></motion.div>
 
-          <motion.img
+          <LazyLoadImage
             src="./images/covid.png"
             alt="headhsot"
-            className="filter-grayscale rounded-sm h-96 object-cover relative rounded-sm object-cover"
+            className=" rounded-sm h-96 object-cover relative rounded-sm object-cover"
           />
 
           <div className="h-full w-full absolute top-0 bg-opacity-50 bg-navy-normal  backdrop-grayscale  hover:filter-none  rounded-sm group-hover:bg-opacity-0 transition ease-in duration-100"></div>

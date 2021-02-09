@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const About = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
@@ -99,8 +100,8 @@ const About = () => {
         variants={imageVariants}
         className="group relative h-40 md:h-64 lg:h-80 w-max lg:ml-5 transition ease-in duration-100"
       >
-        <img
-          src="https://loremflickr.com/640/360"
+        <LazyLoadImage
+          src="./images/covid.png"
           alt="headhsot"
           className="z-10 relative h-full object-cover rounded-sm"
         />
