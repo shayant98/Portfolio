@@ -67,12 +67,14 @@ const About = () => {
           build products that provide pixel-perfect, performant experiences.
         </motion.p>
         <motion.p variants={textVarients} className="pt-5">
-          Currently i'm studying at the{" "}
+          Currently i'm studying Software Engineering at the{" "}
           <motion.a href="https://unasat.net/" className="text-red-400">
             University of Applied Sciences & technology
           </motion.a>{" "}
-          to get my bacholar in Software Engineering. Late 2018 i joined the
-          development team at{" "}
+          where i'll soon recieve my bacholar.
+        </motion.p>
+        <motion.p variants={textVarients} className="pt-5">
+          Late 2018 i joined the development team at{" "}
           <motion.a href="https://telesur.sr/" className="text-red-400">
             Telesur
           </motion.a>{" "}
