@@ -79,15 +79,16 @@ const Header = ({ toggleMenu, isOpen }) => {
         <motion.div className="px-8 hidden lg:block ">
           {menuOptions.map((option, index) => (
             <HeaderOption
+              key={index}
               option={option}
               index={index}
               variants={variants}
               custom={index}
             />
           ))}
-          <motion.button href="#" variants={variants}>
+          <motion.a href="#" variants={variants}>
             <Button title="Resume" />
-          </motion.button>{" "}
+          </motion.a>{" "}
         </motion.div>
       </nav>
     </>
