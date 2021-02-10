@@ -46,7 +46,10 @@ const Hero = () => {
           transition={{ delay: 1.3, duration: 0.5 }}
           href="mailto:shayant98@gmail.com"
         >
-          <Button title="Get in touch" icon={<HiOutlineHand />} />
+          <Button
+            title="Get in touch"
+            icon={<HiOutlineHand className="text-xl" />}
+          />
         </motion.a>
       </div>
     </>
