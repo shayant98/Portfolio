@@ -28,15 +28,6 @@ const Header = ({ toggleMenu, isOpen }) => {
     hidden: {
       y: "-100vh",
     },
-    visible: {
-      y: "0",
-      transition: {
-        duration: 1,
-        staggerChildren: 0.1,
-        type: "tween",
-        ease: "easeInOut",
-      },
-    },
   };
 
   return (
@@ -85,14 +76,14 @@ const Header = ({ toggleMenu, isOpen }) => {
             </svg>
           )}
         </div>
-        <motion.div
-          variants={variants}
-          initial="hidden"
-          animate="visible"
-          className="px-8 hidden lg:block "
-        >
+        <motion.div className="px-8 hidden lg:block ">
           {menuOptions.map((option, index) => (
-            <HeaderOption option={option} index={index} variants={variants} />
+            <HeaderOption
+              option={option}
+              index={index}
+              variants={variants}
+              custom={index}
+            />
           ))}
           <motion.button href="#" variants={variants}>
             <Button title="Resume" />

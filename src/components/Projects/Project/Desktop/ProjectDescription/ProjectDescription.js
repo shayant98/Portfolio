@@ -1,4 +1,6 @@
 import React from "react";
+import ProjectLinks from "../../ProjectLinks";
+import TechnologiesList from "../../TechnologiesList";
 
 const ProjectDescription = ({ flip, project }) => {
   return (
@@ -22,16 +24,9 @@ const ProjectDescription = ({ flip, project }) => {
           {project.description}
         </p>
       </div>
-      <div
-        className={`py-6  font-mono text-navy-light  ${!flip && "text-right"}`}
-      >
-        <ul className="inline-flex space-x-4">
-          {project.technologies.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
-        </ul>
-      </div>
-      <div className={`flex space-x-4 ${!flip && "justify-end"}`}>
+      <TechnologiesList technologies={project.technologies} flip={flip} />
+      <ProjectLinks project={project} flip={flip} />
+      {/* <div className={`flex space-x-4 `}>
         {project.github && (
           <a
             target="_blank"
@@ -79,7 +74,7 @@ const ProjectDescription = ({ flip, project }) => {
             </svg>
           </a>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

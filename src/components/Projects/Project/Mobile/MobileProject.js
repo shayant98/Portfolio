@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectImage from "../Desktop/ProjectImage";
+import ProjectImage from "../Mobile/ProjectImage";
 import ProjectDescription from "./ProjectDescription/ProjectDescription";
 
 const MobileProject = ({ flip, project }) => {
