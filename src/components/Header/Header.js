@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Button from "../Button";
 import HeaderOption from "./HeaderOption";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
+
+import LanguageDropdown from "./LanguageDropdown";
 const Header = ({ toggleMenu, isOpen }) => {
   const menuOptions = [
     {
@@ -63,6 +65,7 @@ const Header = ({ toggleMenu, isOpen }) => {
           <motion.a href="#" variants={variants}>
             <Button title="Resume" />
           </motion.a>{" "}
+          <LanguageDropdown variants={variants} />
         </motion.div>
       </nav>
     </>
