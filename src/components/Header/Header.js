@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import Button from "../Button";
 import HeaderOption from "./HeaderOption";
-
+import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 const Header = ({ toggleMenu, isOpen }) => {
   const menuOptions = [
     {
@@ -45,35 +45,9 @@ const Header = ({ toggleMenu, isOpen }) => {
           }}
         >
           {isOpen ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              className="h-6 w-6 text-red-400"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
+            <HiOutlineX className="text-red-400 text-3xl" />
           ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              className="h-6 w-6 text-red-400"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
+            <HiMenuAlt3 className="text-red-400 text-3xl" />
           )}
         </div>
         <motion.div className="px-8 hidden lg:block ">
