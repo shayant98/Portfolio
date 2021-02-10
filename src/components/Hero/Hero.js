@@ -36,7 +36,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.5 }}
         >
-          I'm a software engineer based in Paramaribo, Suriname specializing in
+          I'm a software engineer based in Paramaribo, Suriname, specializing in
           building (and occasionally designing) exceptional websites,
           applications, and everything in between.
         </motion.p>

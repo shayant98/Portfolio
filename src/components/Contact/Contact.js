@@ -37,7 +37,7 @@ const Contact = () => {
         Get in Touch
       </motion.h3>
       <motion.p className="mt-3 text-blue-200 text-center text-lg w-80">
-        Although I'm not currently looking for any new opportunities, my inbox
+        Although I'm currently not looking for any new opportunities, my inbox
         is always open. Whether you have a question or just want to say hi, I'll
         try my best to get back to you!
       </motion.p>
