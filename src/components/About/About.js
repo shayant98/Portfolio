@@ -98,7 +98,7 @@ const About = () => {
       </motion.div>
       <motion.div
         variants={imageVariants}
-        className="group relative h-40 md:h-64 lg:h-80 w-max lg:ml-5 transition ease-in duration-100"
+        className="group relative h-36 md:h-64 lg:h-80 w-max lg:ml-5 transition ease-in duration-100"
       >
         <LazyLoadImage
           src="./images/covid.png"

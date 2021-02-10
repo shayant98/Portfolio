@@ -32,7 +32,7 @@ const Contact = () => {
       variants={variants}
       className="mb-10 flex flex-col justify-center w-full items-center"
     >
-      <motion.h3 className="text-5xl lg:text-6xl text-blue-200  font-extrabold">
+      <motion.h3 className="text-4xl lg:text-6xl text-blue-200  font-extrabold">
         Get in Touch
       </motion.h3>
       <motion.p className="mt-3 text-blue-200 text-center text-lg w-80">
