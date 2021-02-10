@@ -23,17 +23,17 @@ const Sections = () => {
         className="flex flex-col justify-center items-center mt-10"
         id="work"
       >
-        <SectionContainer count={2} title={"Where i've worked"}>
+        <SectionContainer count={2} title={"Where I've worked"}>
           <Work />
         </SectionContainer>
       </div>
       <div id="projects">
-        <SectionContainer count={3} title={"Some things i've build"}>
+        <SectionContainer count={3} title={"Some things I've build"}>
           <Projects />
         </SectionContainer>
       </div>
       <div id="contact">
-        <SectionContainer count={3} title={"What's Next"}>
+        <SectionContainer count={4} title={"What's Next"}>
           <Contact />
         </SectionContainer>
       </div>
