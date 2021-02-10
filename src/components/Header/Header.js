@@ -65,7 +65,7 @@ const Header = ({ toggleMenu, isOpen }) => {
           <motion.a href="#" variants={variants}>
             <Button title="Resume" />
           </motion.a>{" "}
-          <LanguageDropdown variants={variants} />
+          {/* <LanguageDropdown variants={variants} /> */}
         </motion.div>
       </nav>
     </>
