@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import TechnologiesListItem from "./TechnologiesListItem";
 
 const TechnologiesList = () => {
   const technologies = [
@@ -24,9 +25,11 @@ const TechnologiesList = () => {
       className="pt-8 grid grid-cols-2 text-sm"
     >
       {technologies.map((technology, index) => (
-        <motion.li key={index} variants={textVarients}>
-          <span className="text-red-400 mr-2">▹</span> {technology}
-        </motion.li>
+        <TechnologiesListItem
+          key={index}
+          index={index}
+          technology={technology}
+        />
       ))}
     </motion.ul>
   );

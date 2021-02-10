@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import TechnologiesList from "./TechnologiesList";
+import TechnologiesList from "./TechnologyList/TechnologiesList";
 import AboutDescription from "./AboutDescription";
 import AboutImage from "./AboutImage";
 const About = () => {
