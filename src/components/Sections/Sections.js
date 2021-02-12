@@ -23,12 +23,12 @@ const Sections = () => {
         className="flex flex-col justify-center items-center mt-10"
         id="work"
       >
-        <SectionContainer count={2} title={"Where I've worked"}>
+        <SectionContainer count={2} title={"Where I've Worked"}>
           <Work />
         </SectionContainer>
       </div>
       <div id="projects">
-        <SectionContainer count={3} title={"Some things I've build"}>
+        <SectionContainer count={3} title={"Some Things I've Build"}>
           <Projects />
         </SectionContainer>
       </div>
