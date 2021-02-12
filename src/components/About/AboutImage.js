@@ -21,7 +21,7 @@ const AboutImage = () => {
       className="group relative h-80 mx-auto w-max lg:ml-5 transition ease-in duration-100"
     >
       <LazyLoadImage
-        src="./images/portrait.jpg"
+        src="./images/portrait.webp"
         alt="headshot wearing yellow shirt"
         className="z-10 relative  w-64 md:w-96 lg:w-96 h-full  object-cover object-top rounded-sm"
       />
