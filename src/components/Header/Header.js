@@ -28,7 +28,11 @@ const Header = ({ toggleMenu, isOpen }) => {
 
   const variants = {
     hidden: {
-      y: "-100vh",
+      y: "-50vh",
+    },
+    visible: {
+      y: "0",
+      // type: "tween",
     },
   };
 

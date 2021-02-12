@@ -4,7 +4,13 @@ import { Link } from "react-scroll";
 
 const HeaderOption = ({ index, option, variants }) => {
   return (
-    <motion.button key={index} variants={variants}>
+    <motion.button
+      key={index}
+      variants={variants}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 0.2 * index + 1 }}
+    >
       <Link
         to={option.to}
         smooth={true}
