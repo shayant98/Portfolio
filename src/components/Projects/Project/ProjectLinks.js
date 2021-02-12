@@ -1,5 +1,6 @@
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FaAppStoreIos, FaGooglePlay } from "react-icons/fa";
 const ProjectLinks = ({ flip, project }) => {
   return (
     <div
@@ -25,6 +26,26 @@ const ProjectLinks = ({ flip, project }) => {
           className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-300"
         >
           <FiExternalLink className="text-2xl" />
+        </a>
+      )}
+      {project.android && (
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={project.android}
+          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-300"
+        >
+          <FaGooglePlay className="text-2xl" />
+        </a>
+      )}
+      {project.ios && (
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={project.ios}
+          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-300"
+        >
+          <FaAppStoreIos className="text-2xl" />
         </a>
       )}
     </div>

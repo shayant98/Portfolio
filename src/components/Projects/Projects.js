@@ -11,22 +11,26 @@ const Projects = () => {
       github: "https://github.com/shayant98/covid19Tracker",
       url: "https://covid19trackershayant.herokuapp.com/",
       description:
-        "My goal is to always build products that provide pixel-perfect, performant experiences. My goal is to always build products that provide pixel-perfect, performant experiences.",
-      technologies: ["Next.Js", "Next.Js", "Next.Js", "Next.Js"],
+        "A webapp for at a glance information about the COVID-19 pandemic. View numbers by country/province or state(US), also view the number of people vaccinated.",
+      technologies: ["HTML", "Javascript(ES6)", "Node.Js"],
     },
     {
-      title: "Covid 19 tracker 2",
-      github: "https://github.com/shayant98/covid19Tracker",
-      url: "https://covid19trackershayant.herokuapp.com/",
+      title: "ELECTROSHOP",
+      github: "https://github.com/shayant98/electroshop",
+      url: "https://electroshopmern.herokuapp.com/",
       description:
-        "My goal is to always build products that provide pixel-perfect, performant experiences. My goal is to always build products that provide pixel-perfect, performant experiences.",
-      technologies: ["Javascript (ES6+)", "React", "Next.Js", "Node.Js"],
+        "A webshop built from scratch with PayPal integration. View products, leave reviews, checkout. This app has everything you expect from a webshop",
+      technologies: ["React", "Node.Js", "MongoDB", "Express", "React-Query"],
     },
     {
-      title: "Covid 19 tracker 3",
+      title: "TBN Mobile App",
       description:
-        "My goal is to always build products that provide pixel-perfect, performant experiences. My goal is to always build products that provide pixel-perfect, performant experiences.",
-      technologies: ["Javascript (ES6+)", "React", "Next.Js", "Node.Js"],
+        "A new way of connecting with Radio 90.5 FM in Suriname. Listen to your favourite stations and watch live tv anywhere.",
+      technologies: ["Flutter", "Firebase", "NodeJS"],
+      android:
+        "https://play.google.com/store/apps/details?id=com.radiotrishul.tbn",
+      ios:
+        "https://apps.apple.com/us/app/trishul-broadcasting-network/id1530443572",
     },
   ];
 
