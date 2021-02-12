@@ -66,7 +66,7 @@ const Header = ({ toggleMenu, isOpen }) => {
               : "0px 0px 0px rgb(0,0,0)",
         }}
         transition={{ duration: 0.3 }}
-        className={`bg-navy-normal  fixed  w-screen justify-between h-16 lg:h-24 flex items-center font-mono text-white text-md px-3 lg:px-12 z-50`}
+        className={`bg-navy-normal  fixed  w-screen justify-between h-16 lg:h-24  flex items-center font-mono text-white text-md px-3 lg:px-12 z-50`}
       >
         <motion.div animate={{ opacity: 1 }}>
           <Link to="home" smooth={true} className="pl-8 cursor-pointer">
@@ -85,7 +85,7 @@ const Header = ({ toggleMenu, isOpen }) => {
             <HiMenuAlt3 className="text-red-400 text-3xl" />
           )}
         </div>
-        <motion.div className="px-8 hidden lg:block ">
+        <motion.div className="px-8  hidden lg:flex ">
           {menuOptions.map((option, index) => (
             <HeaderOption
               key={index}
@@ -95,9 +95,16 @@ const Header = ({ toggleMenu, isOpen }) => {
               custom={index}
             />
           ))}
-          <motion.a href="#" variants={variants}>
-            <Button title="Resume" />
-          </motion.a>{" "}
+          <motion.div
+            variants={variants}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.2 * 10 }}
+          >
+            <a href="#about">
+              <Button title="Resume" />
+            </a>
+          </motion.div>
           {/* <LanguageDropdown variants={variants} /> */}
         </motion.div>
       </motion.nav>
