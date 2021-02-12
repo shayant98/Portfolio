@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectDescription from "./ProjectDescription/ProjectDescription";
 import ProjectImage from "./ProjectImage";
 

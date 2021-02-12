@@ -1,13 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Project from "./Project/Project";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import Button from "../Button";
 import { FiFolder } from "react-icons/fi";
 
 const Projects = () => {
-  const controls = useAnimation();
-  const { ref, inView } = useInView();
   const projects = [
     {
       title: "Covid 19 tracker",
@@ -32,34 +29,11 @@ const Projects = () => {
       technologies: ["Javascript (ES6+)", "React", "Next.Js", "Node.Js"],
     },
   ];
-  const variants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.5,
-      },
-    },
-  };
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
 
   return (
     <div className="w-full flex flex-col justify-center items-center">
       {projects.map((project, index) => (
-        <motion.div
-          key={index}
-          custom={index}
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={variants}
-        >
+        <motion.div key={index} custom={index}>
           <Project key={index} flip={index % 2 === 0} project={project} />
         </motion.div>
       ))}
