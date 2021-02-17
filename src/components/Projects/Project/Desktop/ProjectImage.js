@@ -6,7 +6,7 @@ const ProjectImage = ({ flip }) => {
   return (
     <motion.div
       whileHover={{ y: 10 }}
-      className={`relative z-0  hover:filter-none  ${flip && "order-last"}`}
+      className={`relative z-0  ${flip && "order-last"}`}
     >
       <motion.div
         className={`h-full w-full absolute top-4 ${
@@ -17,7 +17,7 @@ const ProjectImage = ({ flip }) => {
       <LazyLoadImage
         src="./images/covid.png"
         alt="headhsot"
-        className=" rounded-sm h-96 object-cover relative rounded-sm object-cover object-bottom"
+        className=" rounded-sm h-80  object-cover relative rounded-sm object-cover object-bottom"
       />
 
       <div className="h-full w-full absolute top-0 bg-opacity-50 bg-navy-normal  backdrop-grayscale  hover:filter-none  rounded-sm group-hover:bg-opacity-0 transition ease-in duration-100"></div>
