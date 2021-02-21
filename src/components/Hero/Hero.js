@@ -23,15 +23,15 @@ const Hero = () => {
           Shayant Sital.
         </motion.h2>
         <motion.h2
-          className="text-4xl my-3  md:text-6xl md:my-8 text-white text-red-100 font-bold"
+          className="text-4xl my-3  md:text-6xl md:my-8 text-white text-red-100 font-bold text-opacity-50"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.5 }}
         >
-          I build things for the web
+          I build things for the web.
         </motion.h2>
         <motion.p
-          className="mt-8 mb-16 max-w-lg text-lg  text-blue-100 leading-7"
+          className="mt-4 mb-10  max-w-lg  text-sm text-blue-200 text-opacity-50 leading-7"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.5 }}
@@ -44,12 +44,9 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.5 }}
-          href="mailto:shayant98@gmail.com"
+          href="mailto:shayant@tuta.io"
         >
-          <Button
-            title="Get in touch"
-            icon={<HiOutlineHand className="text-xl" />}
-          />
+          <Button title="Get in touch" />
         </motion.a>
       </div>
     </>

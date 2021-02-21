@@ -19,7 +19,7 @@ const ProjectDescription = ({ flip, project }) => {
       >
         {project.title}
       </p>
-      <div className="py-6 px-8 bg-navy-light text-blue-200 rounded-sm justify-end max-w-xl shadow-xl hover:shadow-2xl transition ease-in duration-100">
+      <div className="py-5 px-8 bg-navy-light text-blue-200 text-opacity-75 rounded-sm justify-end max-w-xl shadow-xl hover:shadow-2xl transition ease-in duration-100">
         <p className="leading-7 tracking-wide text-md ">
           {project.description}
         </p>

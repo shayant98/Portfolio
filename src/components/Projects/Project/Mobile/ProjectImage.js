@@ -9,8 +9,7 @@ const ProjectImage = ({ flip }) => {
         alt="headhsot"
         className="filter-grayscale h-80 object-cover rounded-sm"
       />
-      <div className="h-full w-full absolute top-0 bg-opacity-50 bg-red-500 rounded-sm"></div>
-      <div className="h-full w-full absolute top-0 bg-opacity-75 bg-gray-900 rounded-sm"></div>
+      <div className="h-full w-full absolute top-0 bg-opacity-75 bg-navy-normal rounded-sm"></div>
     </div>
   );
 };

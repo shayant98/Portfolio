@@ -6,10 +6,10 @@ const ProjectDescription = ({ flip, project }) => {
   return (
     <div className={`absolute z-40 p-4 md:p-8 w-full ${flip && "text-right"}`}>
       <p className={`text-red-400 justify-self-end `}>Featured Project</p>
-      <p className={`text-blue-200 text-2xl  font-bold py-3 `}>
+      <p className={`text-blue-200 text-xl md:text-2xl  font-bold py-3 `}>
         {project.title}
       </p>
-      <p className="leading-6 tracking-wide text-sm text-blue-200">
+      <p className="leading-6 tracking-wide text-sm text-blue-200 text-opacity-75 ">
         {project.description}
       </p>
       <TechnologiesList technologies={project.technologies} />

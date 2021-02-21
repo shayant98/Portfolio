@@ -6,7 +6,7 @@ const Button = ({ title, icon = null, lg = false }) => {
       whileHover={{ scale: 1.1 }}
       className={`${icon && "flex justify-around w-48"} ${
         lg && "w-56 "
-      } px-6 py-4 border-solid border-2 rounded-sm border-red-400 text-red-400`}
+      } px-6 py-4 border-solid border rounded-sm border-red-400 text-red-400`}
     >
       {icon} {title}
     </motion.button>

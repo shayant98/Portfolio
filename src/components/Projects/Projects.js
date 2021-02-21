@@ -19,7 +19,7 @@ const Projects = () => {
       github: "https://github.com/shayant98/electroshop",
       url: "https://electroshopmern.herokuapp.com/",
       description:
-        "A webshop built from scratch with PayPal integration. View products, leave reviews, checkout. This app has everything you expect from a webshop",
+        "A webshop built from scratch with PayPal integration. View products, leave reviews & checkout. This app has everything you expect from a webshop",
       technologies: ["React", "Node.Js", "MongoDB", "Express", "React-Query"],
     },
     {
@@ -41,13 +41,16 @@ const Projects = () => {
           <Project key={index} flip={index % 2 === 0} project={project} />
         </motion.div>
       ))}
-      <div className="mt-20">
-        <motion.a href="https://github.com/shayant98?tab=repositories">
-          <Button
-            lg={true}
-            title="Visit the Archive"
-            icon={<FiFolder className="text-xl" />}
-          />
+
+      <div className="mt-20 lg:mt-56 text-red-400  text-center">
+        <motion.h3 className="text-2xl lg:text-4xl mb-4  text-blue-200 font-bold">
+          Other interesting projects
+        </motion.h3>
+        <motion.a
+          href="https://github.com/shayant98?tab=repositories"
+          className="font-mono border-b border-navy-normal hover:border-red-400 transition delay-200 ease-in-out"
+        >
+          Visit the Archive
         </motion.a>
       </div>
     </div>

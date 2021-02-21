@@ -34,7 +34,7 @@ const About = () => {
       animate={controls}
       variants={varients}
     >
-      <motion.div className="leading-6 text-blue-100 text-lg">
+      <motion.div className="leading-6 text-blue-200 text-opacity-50 md:text-lg">
         <AboutDescription />
         <TechnologiesList />
       </motion.div>
