@@ -10,7 +10,7 @@ const Social = () => {
         <ul>
           <a
             href="https://github.com/shayant98"
-            className="hover:text-red-400 transition ease-in duration-300 "
+            className="hover:text-red-400 transition ease-in duration-200 "
           >
             <li className="py-4">
               <FiGithub className="text-2xl" />
@@ -18,7 +18,7 @@ const Social = () => {
           </a>
           <a
             href="https://linkedin.com/in/shayant-sital"
-            className="hover:text-red-400 transition ease-in duration-300 "
+            className="hover:text-red-400 transition ease-in duration-200 "
           >
             <li>
               <FiLinkedin className="text-2xl" />

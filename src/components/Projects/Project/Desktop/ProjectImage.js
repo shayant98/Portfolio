@@ -11,7 +11,7 @@ const ProjectImage = ({ flip }) => {
       <motion.div
         className={`h-full w-full absolute top-4 ${
           flip ? "left-4" : "right-4"
-        } border-4  border-red-400  rounded-sm transition ease-in duration-400`}
+        } border-4  border-red-400  rounded-sm`}
       ></motion.div>
 
       <LazyLoadImage
@@ -20,7 +20,7 @@ const ProjectImage = ({ flip }) => {
         className=" rounded-sm h-80  object-cover relative rounded-sm object-cover object-bottom"
       />
 
-      <div className="h-full w-full absolute top-0 bg-opacity-50 bg-navy-normal  backdrop-grayscale  hover:filter-none  rounded-sm group-hover:bg-opacity-0 transition ease-in duration-100"></div>
+      <div className="h-full w-full absolute top-0 bg-opacity-50 bg-navy-normal  backdrop-grayscale  hover:filter-none  rounded-sm group-hover:bg-opacity-0 transition ease-in duration-200"></div>
     </motion.div>
   );
 };

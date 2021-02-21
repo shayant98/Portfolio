@@ -13,7 +13,7 @@ const ProjectLinks = ({ flip, project }) => {
           target="_blank"
           rel="noreferrer"
           href={project.github}
-          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-300"
+          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-200"
         >
           <FiGithub className="text-2xl" />
         </a>
@@ -23,7 +23,7 @@ const ProjectLinks = ({ flip, project }) => {
           target="_blank"
           rel="noreferrer"
           href={project.url}
-          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-300"
+          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-200"
         >
           <FiExternalLink className="text-2xl" />
         </a>
@@ -33,7 +33,7 @@ const ProjectLinks = ({ flip, project }) => {
           target="_blank"
           rel="noreferrer"
           href={project.android}
-          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-300"
+          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-200"
         >
           <FaGooglePlay className="text-2xl" />
         </a>
@@ -43,7 +43,7 @@ const ProjectLinks = ({ flip, project }) => {
           target="_blank"
           rel="noreferrer"
           href={project.ios}
-          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-300"
+          className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-200"
         >
           <FaAppStoreIos className="text-2xl" />
         </a>

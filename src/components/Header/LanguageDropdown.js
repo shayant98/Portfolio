@@ -18,7 +18,7 @@ const LanguageDropdown = ({ variants }) => {
     <>
       <motion.button
         variants={variants}
-        className="inline-flex mx-7 text-navy-light hover:text-red-400 cursor-pointer transition ease-in duration-300 cursor-pointer"
+        className="inline-flex mx-7 text-navy-light hover:text-red-400 cursor-pointer transition ease-in duration-200 cursor-pointer"
         id="options-menu"
         aria-haspopup="true"
         aria-expanded="true"
@@ -41,7 +41,7 @@ const LanguageDropdown = ({ variants }) => {
           {languages.map((language, index) => (
             <div
               key={index}
-              className="block px-4 py-2 text-sm text-blue-200  hover:text-red-400 transition ease-in duration-300 cursor-pointer"
+              className="block px-4 py-2 text-sm text-blue-200  hover:text-red-400 transition ease-in duration-200 cursor-pointer"
               role="menuitem"
               onClick={() => {
                 setLang(index);

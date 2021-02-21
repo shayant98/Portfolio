@@ -14,7 +14,7 @@ const HeaderOption = ({ index, option, variants }) => {
       <Link
         to={option.to}
         smooth={true}
-        className=" mx-7 hover:text-red-400 cursor-pointer transition ease-in duration-300 cursor-pointer"
+        className=" mx-7 hover:text-red-400 cursor-pointer transition ease-in duration-200 cursor-pointer"
       >
         <span className="text-red-400">0{index + 1}.</span> {option.title}
       </Link>
