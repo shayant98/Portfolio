@@ -25,7 +25,6 @@ const TechnologiesList = () => {
           technology={technology}
         />
       ))}
-      <TechnologiesListItem key={5} index={5} technology={"And more..."} />
     </motion.ul>
   );
 };
