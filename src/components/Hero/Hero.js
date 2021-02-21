@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "../Button";
-import { HiOutlineHand } from "react-icons/hi";
 const Hero = () => {
   return (
     <>
