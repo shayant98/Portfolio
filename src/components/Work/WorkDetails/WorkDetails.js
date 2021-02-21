@@ -15,9 +15,9 @@ const WorkDetails = ({ job }) => {
     },
   };
   return (
-    <motion.div variants={detailsVariants} className="flex-auto mt-5 lg:mt-0">
-      <motion.h3 className="text-blue-100 text-xl">
-        {job.position} <span className="text-red-400">@ {job.name}</span>
+    <motion.div variants={detailsVariants} className="flex-auto mt-10 lg:mt-0">
+      <motion.h3 className="text-blue-100 text-base md:text-xl">
+        {job.position} <span className="text-red-400 ">@ {job.name}</span>
       </motion.h3>
       <motion.p className="text-blue-200 text-sm opacity-25">
         {job.start} - {job.end ?? "present"}
