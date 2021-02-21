@@ -6,7 +6,7 @@ import DesktopProject from "./Desktop/DesktopProject";
 import MobileProject from "./Mobile/MobileProject";
 
 const Project = ({ project, flip = false }) => {
-  const isSmallScreen = useMedia({ query: "(max-width: 768px)" });
+  const isSmallScreen = useMedia({ query: "(max-width: 1024px)" });
 
   const controls = useAnimation();
   const { ref, inView } = useInView();

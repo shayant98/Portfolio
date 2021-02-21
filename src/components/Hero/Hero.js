@@ -31,7 +31,7 @@ const Hero = () => {
           I build things for the web.
         </motion.h2>
         <motion.p
-          className="mt-4 mb-10  max-w-lg  text-sm text-blue-200 text-opacity-50 leading-7"
+          className="mt-4 mb-10  max-w-lg text-blue-200 text-opacity-50 leading-7"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.5 }}

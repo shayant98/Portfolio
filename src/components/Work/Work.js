@@ -66,7 +66,7 @@ const Work = () => {
   return (
     <motion.div
       ref={ref}
-      className=" lg:flex flex-col lg:flex-row gap-8"
+      className="flex flex-col  md:flex-row gap-8"
       initial="hidden"
       animate={controls}
       variants={varients}

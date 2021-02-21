@@ -33,10 +33,10 @@ const Contact = () => {
       variants={variants}
       className="mb-10 flex flex-col justify-center w-full items-center"
     >
-      <motion.h3 className="text-3xl lg:text-6xl text-blue-200  font-bold">
+      <motion.h3 className="text-3xl xl:text-4xl 2xl:text-6xl text-blue-200  font-bold">
         Get in Touch
       </motion.h3>
-      <motion.p className="mt-3 text-blue-200 text-opacity-50 text-center text-sm lg:text-lg lg:w-3/6">
+      <motion.p className="mt-3 text-blue-200 text-opacity-50 text-center  2xl:text-lg lg:w-3/6">
         Although I'm currently not looking for any new opportunities, my inbox
         is always open. Whether you have a question or just want to say hi, I'll
         try my best to get back to you!
