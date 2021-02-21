@@ -1,8 +1,6 @@
 import React from "react";
 import Project from "./Project/Project";
 import { motion } from "framer-motion";
-import Button from "../Button";
-import { FiFolder } from "react-icons/fi";
 
 const Projects = () => {
   const projects = [
@@ -15,7 +13,7 @@ const Projects = () => {
       technologies: ["HTML", "Javascript(ES6)", "Node.Js"],
     },
     {
-      title: "ELECTROSHOP",
+      title: "Electroshop",
       github: "https://github.com/shayant98/electroshop",
       url: "https://electroshopmern.herokuapp.com/",
       description:

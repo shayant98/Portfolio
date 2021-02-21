@@ -3,13 +3,7 @@ import React from "react";
 import TechnologiesListItem from "./TechnologiesListItem";
 
 const TechnologiesList = () => {
-  const technologies = [
-    "Javascript (ES6+)",
-    "HTML & (S)CSS",
-    "React",
-    "Next.Js",
-    "Node.Js",
-  ];
+  const technologies = ["React", "Next.Js", "Node.Js", "MongoDB", "Flutter"];
 
   const textVarients = {
     hidden: {
@@ -31,6 +25,7 @@ const TechnologiesList = () => {
           technology={technology}
         />
       ))}
+      <TechnologiesListItem key={5} index={5} technology={"And more..."} />
     </motion.ul>
   );
 };

@@ -36,6 +36,9 @@ const About = () => {
     >
       <motion.div className="leading-6 text-blue-200 text-opacity-50 md:text-lg">
         <AboutDescription />
+        <motion.p className="mt-4">
+          Here are a few technologies I've been working with recently:
+        </motion.p>
         <TechnologiesList />
       </motion.div>
       <AboutImage />
