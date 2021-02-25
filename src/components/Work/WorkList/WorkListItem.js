@@ -12,23 +12,21 @@ const WorkListItem = ({ selectedJob, setselectedJob, index, job }) => {
   };
 
   return (
-    <div>
-      <motion.li
-        onClick={() => {
-          setselectedJob(index);
-        }}
-        key={index}
-        style={{ borderSpacing: 0 }}
-        variants={listVariants}
-        className={`p-1 md:p-3  h-full w-full text-sm text-center md:text-left font-mono  border-b md:border-l-2 md:border-b-0 cursor-pointer ${
-          index === selectedJob
-            ? "border-red-400 text-red-400"
-            : "border-blue-200 text-blue-200"
-        } hover:bg-navy-light  hover:text-red-400 transition delay-200 ease-in`}
-      >
-        {job.name}
-      </motion.li>
-    </div>
+    <motion.li
+      onClick={() => {
+        setselectedJob(index);
+      }}
+      key={index}
+      style={{ borderSpacing: 0 }}
+      variants={listVariants}
+      className={`p-1 md:p-3  h-full w-full text-sm text-center md:text-left font-mono  border-b md:border-l-2 md:border-b-0 cursor-pointer ${
+        index === selectedJob
+          ? "border-red-400 text-red-400"
+          : "border-blue-200 text-blue-200"
+      } hover:bg-navy-light  hover:text-red-400 transition delay-200 ease-in`}
+    >
+      {job.name}
+    </motion.li>
   );
 };
 

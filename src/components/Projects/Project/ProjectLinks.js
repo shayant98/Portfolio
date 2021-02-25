@@ -32,6 +32,7 @@ const ProjectLinks = ({ flip, project }) => {
         <a
           target="_blank"
           rel="noreferrer"
+          name="androidLink"
           href={project.android}
           className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-200"
         >
@@ -43,6 +44,7 @@ const ProjectLinks = ({ flip, project }) => {
           target="_blank"
           rel="noreferrer"
           href={project.ios}
+          name="iosLink"
           className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-200"
         >
           <FaAppStoreIos className="text-2xl" />
