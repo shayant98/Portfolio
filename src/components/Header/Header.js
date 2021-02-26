@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Button from "../Button";
 import HeaderOption from "./HeaderOption";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
-
+import { ReactComponent as ReactLogo } from "../../logo.svg";
 import LanguageDropdown from "./LanguageDropdown";
 
 const Header = ({ toggleMenu, isOpen }) => {
@@ -66,11 +66,11 @@ const Header = ({ toggleMenu, isOpen }) => {
               : "0px 0px 0px rgb(0,0,0)",
         }}
         transition={{ duration: 0.3 }}
-        className={`bg-navy-normal  fixed  w-screen justify-between h-16 lg:h-24  flex items-center font-mono text-white text-md px-3 lg:px-12 z-50`}
+        className={`flex  justify-between items-center bg-navy-normal  fixed  w-screen  h-16 lg:h-max    font-mono text-white text-md px-3 lg:px-12 lg:py-10 z-50`}
       >
         <motion.div animate={{ opacity: 1 }}>
-          <Link to="home" smooth={true} className="pl-8 cursor-pointer">
-            LOGO
+          <Link to="home" smooth={true} className="">
+            <ReactLogo className="h-10  cursor-pointer" />
           </Link>
         </motion.div>
         <div

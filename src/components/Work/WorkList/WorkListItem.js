@@ -19,7 +19,7 @@ const WorkListItem = ({ selectedJob, setselectedJob, index, job }) => {
       key={index}
       style={{ borderSpacing: 0 }}
       variants={listVariants}
-      className={`p-1 md:p-3  h-full w-full text-sm text-center md:text-left font-mono  border-b md:border-l-2 md:border-b-0 cursor-pointer ${
+      className={`p-1 md:p-3   text-sm text-center md:text-left font-mono  border-b md:border-l-2 md:border-b-0 cursor-pointer ${
         index === selectedJob
           ? "border-red-400 text-red-400"
           : "border-blue-200 text-blue-200"
