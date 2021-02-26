@@ -102,7 +102,7 @@ const Header = ({ toggleMenu, isOpen }) => {
             transition={{ duration: 0.2 * 10 }}
           >
             <a href="#about">
-              <Button title="Resume" />
+              <Button title="Resume" sm={true} />
             </a>
           </motion.div>
           {/* <LanguageDropdown variants={variants} /> */}

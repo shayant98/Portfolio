@@ -37,6 +37,7 @@ const SideMenuList = ({ toggleMenu }) => {
     <div className="py-28 px-5 flex flex-col h-screen  items-center text-blue-200 text-xl md:text-3xl justify-around">
       {menuOptions.map((option, index) => (
         <SideMenuListItem
+          key={index}
           index={index}
           option={option}
           variants={menuVariants}
@@ -44,7 +45,7 @@ const SideMenuList = ({ toggleMenu }) => {
         />
       ))}
       <motion.a href="#" name="resumeLink">
-        <Button title="Resume" />
+        <Button title="Resume" sm={true} />
       </motion.a>
     </div>
   );
