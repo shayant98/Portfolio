@@ -5,7 +5,7 @@ const ProjectImage = ({ flip }) => {
   return (
     <div className={`relative z-0 ${flip && "order-last"}`}>
       <LazyLoadImage
-        src="./images/covid.png"
+        src="./images/covid.webp"
         alt="headhsot"
         className="filter-grayscale h-80 object-cover rounded-sm"
       />

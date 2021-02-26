@@ -15,7 +15,7 @@ const ProjectImage = ({ flip }) => {
       ></motion.div>
 
       <LazyLoadImage
-        src="./images/covid.png"
+        src="./images/covid.webp"
         alt="headhsot"
         className=" rounded-sm h-80  object-cover relative rounded-sm object-cover object-bottom"
       />
