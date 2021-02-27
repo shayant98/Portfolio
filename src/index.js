@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import * as serviceWorker from "./serviceWorker";
 
 import Container from "./components/Container";
 
@@ -12,8 +13,5 @@ ReactDOM.render(
 );
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/sw.js")
-    .then((reg) => console.log("Serviceworker Registered", reg))
-    .catch((error) => console.error("Failed to register Serviceworker", error));
+  serviceWorker.register();
 }
