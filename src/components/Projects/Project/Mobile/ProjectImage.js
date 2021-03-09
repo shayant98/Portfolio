@@ -1,11 +1,11 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const ProjectImage = ({ flip }) => {
+const ProjectImage = ({ flip, image }) => {
   return (
     <div className={`relative z-0 ${flip && "order-last"}`}>
       <LazyLoadImage
-        src="./images/covid.webp"
+        src={image}
         alt="headhsot"
         className="filter-grayscale h-80 object-cover rounded-sm"
       />

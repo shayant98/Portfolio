@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const ProjectImage = ({ flip }) => {
+const ProjectImage = ({ flip, image }) => {
   return (
     <motion.div
       whileHover={{ y: 10 }}
@@ -15,7 +15,7 @@ const ProjectImage = ({ flip }) => {
       ></motion.div>
 
       <LazyLoadImage
-        src="./images/covid.webp"
+        src={image}
         alt="headhsot"
         className=" rounded-sm h-80  object-cover relative rounded-sm object-cover object-bottom"
       />

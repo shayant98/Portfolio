@@ -66,7 +66,7 @@ const Header = ({ toggleMenu, isOpen }) => {
               : "0px 0px 0px rgb(0,0,0)",
         }}
         transition={{ duration: 0.3 }}
-        className={`flex  justify-between items-center bg-navy-normal  fixed  w-screen  h-16 lg:h-max    font-mono text-white text-md px-3 lg:px-12 lg:py-10 z-50`}
+        className={`flex  justify-between items-center bg-navy-normal  fixed  w-screen  h-16 lg:h-max    font-mono text-white text-md px-3 lg:px-12 lg:py-10 z-40`}
       >
         <motion.div animate={{ opacity: 1 }}>
           <Link to="home" smooth={true} className="">

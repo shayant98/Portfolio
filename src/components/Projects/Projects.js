@@ -11,6 +11,7 @@ const Projects = () => {
       description:
         "A webapp for at a glance information about the COVID-19 pandemic. View numbers by country/province or state(US), also view the number of people vaccinated.",
       technologies: ["HTML", "Javascript(ES6)", "Node.Js"],
+      image: "./images/covid.webp",
     },
     {
       title: "Electroshop",
@@ -19,12 +20,14 @@ const Projects = () => {
       description:
         "A webshop built from scratch with PayPal integration. View products, leave reviews & checkout. This app has everything you expect from a webshop",
       technologies: ["React", "Node.Js", "MongoDB", "Express", "React-Query"],
+      image: "./images/electroshop.webp",
     },
     {
       title: "TBN Mobile App",
       description:
         "A new way of connecting with Radio 90.5 FM in Suriname. Listen to your favourite stations and watch live tv anywhere.",
       technologies: ["Flutter", "Firebase", "NodeJS"],
+      image: "./images/covid.webp",
       android:
         "https://play.google.com/store/apps/details?id=com.radiotrishul.tbn",
       ios:
