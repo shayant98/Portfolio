@@ -29,31 +29,18 @@ const Work = () => {
       start: "Nov 2018",
       end: null,
       keyPoints: [
-        "My goal is to always build products that provide pixel-perfect, performant experiences.",
-        "My goal is to always build products that provide pixel-perfect, performant experiences.",
-        "My goal is to always build products that provide pixel-perfect, performant experiences.",
+        "Responsible for building and maintaining applications used by 100+ Telesur personal ",
+        "Responsible for implementing the complete CI/CD workflow, used by the development team ",
       ],
     },
     {
       name: "Ministry of Finance",
       position: "Developer",
-      start: "Nov 2018",
-      end: null,
+      start: "Mar 2018",
+      end: "Nov 2018",
       keyPoints: [
-        "My goal is to always build products that provide pixel-perfect, performant experiences. 2",
-        "My goal is to always build products that provide pixel-perfect, performant experiences. 2",
-        "My goal is to always build products that provide pixel-perfect, performant experiences. 2",
-      ],
-    },
-    {
-      name: "Tres Amigos Development",
-      position: "Web Developer",
-      start: "Nov 2018",
-      end: null,
-      keyPoints: [
-        "My goal is to always build products that provide pixel-perfect, performant experiences. 3",
-        "My goal is to always build products that provide pixel-perfect, performant experiences. 3",
-        "My goal is to always build products that provide pixel-perfect, performant experiences. 3",
+        "Built a complete internal webapplication for sharing office updates & easy access to company personal information",
+        "Responsible for maintaining internal web-applications",
       ],
     },
   ];
