@@ -1,7 +1,8 @@
+import IProject from "@interfaces/Project";
 import ProjectDescription from "./ProjectDescription/ProjectDescription";
 import ProjectImage from "./ProjectImage";
 
-const DesktopProject = ({ project, flip = false }) => {
+const DesktopProject = ({ project, flip = false }: CDesktopProjectProps) => {
   return (
     <div className="group relative  h-max mt-24 cursor-pointer hidden xl:flex ">
       <ProjectImage flip={flip} image={project.image} />
@@ -9,5 +10,10 @@ const DesktopProject = ({ project, flip = false }) => {
     </div>
   );
 };
+
+interface CDesktopProjectProps {
+  flip: boolean
+  project: IProject
+}
 
 export default DesktopProject;

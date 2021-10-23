@@ -1,6 +1,7 @@
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { FaAppStoreIos, FaGooglePlay } from "react-icons/fa";
+import IProject from "@interfaces/Project";
 const ProjectLinks = ({ flip, project }) => {
   return (
     <div
@@ -32,7 +33,6 @@ const ProjectLinks = ({ flip, project }) => {
         <a
           target="_blank"
           rel="noreferrer"
-          name="androidLink"
           href={project.android}
           className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-200"
         >
@@ -44,7 +44,6 @@ const ProjectLinks = ({ flip, project }) => {
           target="_blank"
           rel="noreferrer"
           href={project.ios}
-          name="iosLink"
           className="mt-4 text-blue-200 hover:text-red-400 transition ease-in duration-200"
         >
           <FaAppStoreIos className="text-2xl" />
@@ -53,5 +52,10 @@ const ProjectLinks = ({ flip, project }) => {
     </div>
   );
 };
+
+interface CProjectLinksProps {
+  flip: boolean
+  project: IProject
+}
 
 export default ProjectLinks;

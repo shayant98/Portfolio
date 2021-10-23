@@ -1,9 +1,10 @@
 import React from "react";
 import Project from "./Project/Project";
 import { motion } from "framer-motion";
+import IProject from "@interfaces/Project";
 
 const Projects = () => {
-  const projects = [
+  const projects: IProject[] = [
     {
       title: "Covid 19 tracker",
       github: "https://github.com/shayant98/covid19Tracker",

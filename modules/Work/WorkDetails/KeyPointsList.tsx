@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import KeyPointListitem from "./KeyPointListitem";
 
-const KeyPointsList = ({ points }) => {
+const KeyPointsList = ({ points }: {points: string[]}) => {
   return (
     <motion.ul className=" py-3 text-blue-200 text-opacity-50 ">
       {points.map((point, index) => (

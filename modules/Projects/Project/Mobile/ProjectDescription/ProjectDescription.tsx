@@ -1,8 +1,9 @@
+import IProject from "@interfaces/Project";
 import React from "react";
 import ProjectLinks from "../../ProjectLinks";
 import TechnologiesList from "../../TechnologiesList";
 
-const ProjectDescription = ({ flip, project }) => {
+const ProjectDescription = ({ flip, project }: CProjectDescriptionProps) => {
   return (
     <div className={`absolute z-40 p-4 md:p-8 w-full ${flip && "text-right"}`}>
       <p className={`text-red-400 justify-self-end `}>Featured Project</p>
@@ -17,5 +18,10 @@ const ProjectDescription = ({ flip, project }) => {
     </div>
   );
 };
+
+interface CProjectDescriptionProps {
+  project: IProject
+  flip: boolean
+}
 
 export default ProjectDescription;

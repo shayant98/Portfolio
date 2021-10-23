@@ -1,3 +1,4 @@
+import IProject from "@interfaces/Project";
 import React from "react";
 import ProjectLinks from "../../ProjectLinks";
 import TechnologiesList from "../../TechnologiesList";
@@ -15,5 +16,10 @@ const ProjectDescription = ({ flip, project }) => {
     </div>
   );
 };
+
+interface CProjectDescriptionProps {
+  project: IProject
+  flip: boolean
+}
 
 export default ProjectDescription;

@@ -1,8 +1,8 @@
+import Button from "../../components/Button";
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { HiOutlineHand } from "react-icons/hi";
 import { useInView } from "react-intersection-observer";
-import Button from "../../components/Button";
 
 const Contact = () => {
   const controls = useAnimation();
@@ -33,7 +33,7 @@ const Contact = () => {
         back to you!
       </motion.p>
       <motion.a className="py-10" href="mailto:shayant@tuta.io">
-        <Button title="Get in touch" icon={<HiOutlineHand className="text-xl" />} />
+        <Button size="lg" title="Get in touch" icon={<HiOutlineHand className="text-xl" />} />
       </motion.a>
     </motion.div>
   );

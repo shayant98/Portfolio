@@ -69,7 +69,7 @@ const Header = ({ toggleMenu, isOpen }: HeaderProps) => {
       >
         <motion.div animate={{ opacity: 1 }} className="mt-2">
           <Link to="home" smooth={true} >
-            <Image src={Logo} alt="logo" layout="fixed" width="35" height="35" objectFit="contain"/>
+            <Image src={Logo} alt="logo" layout="fixed" width="35" height="35" objectFit="contain" priority/>
           </Link>
         </motion.div>
         <div

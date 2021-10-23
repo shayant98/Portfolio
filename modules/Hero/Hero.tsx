@@ -34,7 +34,7 @@ const Hero = () => {
           between.
         </motion.p>
         <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3, duration: 0.5 }} href="mailto:shayant@tuta.io">
-          <Button title="Get in touch" />
+          <Button title="Get in touch" size="lg" />
         </motion.a>
       </div>
     </>
