@@ -13,7 +13,7 @@ const AboutDescription = () => {
   return (
     <>
       <motion.p variants={textVarients}>
-        Hello! I&aposm Shayant, a software engineer based in Paramaribo, Suriname.{" "}
+        Hello! I&apos;m Shayant, a software engineer based in Paramaribo, Suriname.{" "}
       </motion.p>
       <motion.p variants={textVarients} className="pt-5">
         I enjoy creating things that live on the internet, whether that be
@@ -21,11 +21,11 @@ const AboutDescription = () => {
         build products that provide pixel-perfect, performant experiences.
       </motion.p>
       <motion.p variants={textVarients} className="pt-5">
-        Currently i&aposm studying Software Engineering at the{" "}
+        Currently i&apos;m studying Software Engineering at the{" "}
         <motion.a href="https://unasat.net/" className="text-red-400">
           University of Applied Sciences & technology
         </motion.a>{" "}
-        where i&aposll soon recieve my bacholar.
+        where i&apos;ll soon recieve my bacholar.
       </motion.p>
       <motion.p variants={textVarients} className="pt-5">
         Late 2018 i joined the development team at{" "}
