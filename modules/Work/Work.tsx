@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation, Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import WorkList from "./WorkList/WorkList";
 import WorkDetails from "./WorkDetails/WorkDetails";
+import IWork from "@interfaces/Work";
 
 const Work = () => {
   const [selectedJob, setselectedJob] = useState(0);
@@ -10,7 +11,7 @@ const Work = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
-  const varients = {
+  const varients: Variants = {
     hidden: {
       opacity: 0,
     },
@@ -22,7 +23,7 @@ const Work = () => {
     },
   };
 
-  const work = [
+  const work: IWork[] = [
     {
       name: "Telesur",
       position: "Software Developer",

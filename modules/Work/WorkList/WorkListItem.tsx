@@ -1,7 +1,8 @@
+import IWork from "@interfaces/Work";
 import { motion } from "framer-motion";
 import React from "react";
 
-const WorkListItem = ({ selectedJob, setselectedJob, index, job }) => {
+const WorkListItem = ({ selectedJob, setselectedJob, index, job }:WorkListItemProps) => {
   const listVariants = {
     hidden: {
       opacity: 0,
@@ -29,5 +30,12 @@ const WorkListItem = ({ selectedJob, setselectedJob, index, job }) => {
     </motion.li>
   );
 };
+
+interface WorkListItemProps {
+  selectedJob: number
+  setselectedJob: Function
+  index: number
+  job: IWork
+}
 
 export default WorkListItem;
