@@ -32,6 +32,7 @@ const SideMenuList = ({ toggleMenu }: SideMenuListProps) => {
       opacity: 1,
       y: "0",
     },
+
   };
   return (
     <div className="py-28 px-5 flex flex-col h-screen  items-center text-blue-200 text-xl md:text-3xl justify-around">

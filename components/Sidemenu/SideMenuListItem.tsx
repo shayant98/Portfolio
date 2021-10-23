@@ -9,7 +9,7 @@ const SideMenuListItem = ({ variants, index, option, toggleMenu }: SideMenuListI
       className="flex flex-col items-center text-base"
       key={index}
       variants={variants}
-      transition={{ delay: index * 0.2, type: "tween" }}
+      transition={{ delay: index * 0.2, type: "spring", stiffness: 50 }}
     >
       <span className="font-mono text-sm text-red-400">0{index + 1}.</span>
       <Link
