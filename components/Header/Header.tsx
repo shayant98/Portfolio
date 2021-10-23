@@ -5,7 +5,7 @@ import { motion, Variants } from "framer-motion";
 import Button from "../Button";
 import HeaderOption from "./HeaderOption";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
-import Logo from "../../public/images/logo.svg";
+import Logo from "../../public/images/icons/icon-512x512.png";
 import LanguageDropdown from "./LanguageDropdown";
 import IMenuOption from "../../interfaces/MenuOption";
 
@@ -67,15 +67,18 @@ const Header = ({ toggleMenu, isOpen }: HeaderProps) => {
         transition={{ duration: 1.5 }}
         className={`flex  justify-between items-center bg-navy-normal bg-opacity-50  fixed  w-screen  h-16 lg:h-max    font-mono text-white text-md px-3 lg:px-12 lg:py-10 z-40`}
       >
-        <motion.div animate={{ opacity: 1 }} className="bg-black">
-          <Link to="home" smooth={true} className="w-32">
-            <Image src={Logo} alt="logo" layout="fill" objectFit="contain" objectPosition="left" />
+        <motion.div animate={{ opacity: 1 }} className="mt-2">
+          <Link to="home" smooth={true} >
+            <Image src={Logo} alt="logo" layout="fixed" width="35" height="35" objectFit="contain"/>
           </Link>
         </motion.div>
         <div
           className="cursor-pointer lg:hidden"
           onClick={() => {
+             console.log(isOpen);
             toggleMenu(!isOpen);
+
+
           }}
         >
           {isOpen ? <HiOutlineX className="text-red-400 text-3xl" /> : <HiMenuAlt3 className="text-red-400 text-3xl" />}

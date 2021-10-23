@@ -43,7 +43,7 @@ const Projects = () => {
         <motion.a href="https://github.com/shayant98?tab=repositories" className="font-mono border-b border-navy-normal hover:border-red-400 transition delay-200 ease-in-out">
           Visit the Archive
         </motion.a>
-        <div className="grid grid-cols-3 gap-3 grid-rows-3">
+        {/* <div className="grid grid-cols-3 gap-3 grid-rows-3">
           <div className="w-72 h-80  bg-navy-light"></div>
           <div className="w-72 h-80  bg-navy-light"></div>
           <div className="w-72 h-80  bg-navy-light"></div>
@@ -53,7 +53,7 @@ const Projects = () => {
           <div className="w-72 h-80  bg-navy-light"></div>
           <div className="w-72 h-80  bg-navy-light"></div>
           <div className="w-72 h-80  bg-navy-light"></div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
