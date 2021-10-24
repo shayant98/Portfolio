@@ -1,2 +1,12 @@
-# Welcome to my portfolio
-It's still a work in progress...just like me
+![Logo](public/images/icons/icon-256x256.png)
+
+# Portfolio
+
+My personal portfolio website...
+
+
+## Tech Stack
+
+- Nextjs
+- Tailwindcss
+
