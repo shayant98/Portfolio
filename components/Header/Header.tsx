@@ -8,8 +8,10 @@ import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import Logo from "../../public/images/icons/icon-512x512.png";
 import LanguageDropdown from "./LanguageDropdown";
 import IMenuOption from "../../interfaces/MenuOption";
+import useTranslation from 'next-translate/useTranslation'
 
 const Header = ({ toggleMenu, isOpen }: HeaderProps) => {
+    const { t } = useTranslation('common')
   const [showMenu, setShowMenu] = useState<boolean>(true);
   const [lastScrollPos, setLastScrollPos] = useState<number>(0);
 
@@ -21,19 +23,19 @@ const Header = ({ toggleMenu, isOpen }: HeaderProps) => {
 
   const menuOptions: IMenuOption[] = [
     {
-      title: "About",
+      title: t("menu_about"),
       to: "home",
     },
     {
-      title: "Experience",
+      title: t("menu_exp"),
       to: "work",
     },
     {
-      title: "Projects",
+      title: t("menu_proj"),
       to: "projects",
     },
     {
-      title: "Contact",
+      title: t("menu_contact"),
       to: "contact",
     },
   ];
@@ -89,7 +91,7 @@ const Header = ({ toggleMenu, isOpen }: HeaderProps) => {
           ))}
           <motion.div variants={variants} initial="hidden" animate="visible" transition={{ duration: 0.2 * 10 }}>
             <a href="#about">
-              <Button title="Resume" size="sm" />
+              <Button title={t("menu_resume")} size="sm" />
             </a>
           </motion.div>
           {/* <LanguageDropdown variants={variants} /> */}
