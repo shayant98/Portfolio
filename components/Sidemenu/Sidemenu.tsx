@@ -15,7 +15,8 @@ const Sidemenu = ({ isOpen, toggleMenu }: SidemenuProps) => {
           className="fixed inset-0 z-50 overflow-y-auto "
           onClose={(e) => toggleMenu(false)}
         >
-          <div className="min-h-screen px-4 text-center">
+          <div className="min-h-screen">
+             <Dialog.Overlay className="fixed inset-0 bg-navy-normal opacity-50" />
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
