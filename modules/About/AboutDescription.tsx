@@ -15,27 +15,24 @@ const AboutDescription = () => {
   return (
     <>
       <motion.p variants={textVarients}>
-        Hello! I&apos;m Shayant, a software engineer based in Paramaribo, Suriname.{" "}
+        {t("about_personal")}
       </motion.p>
       <motion.p variants={textVarients} className="pt-5">
-        I enjoy creating things that live on the internet, whether that be
-        websites, applications, or anything in between. My goal is to always
-        build products that provide pixel-perfect, performant experiences.
+       {t("about_passion")}
       </motion.p>
       <motion.p variants={textVarients} className="pt-5">
-        Currently i&apos;m studying Software Engineering at the{" "}
+        {t("about_school")}
         <motion.a href="https://unasat.net/" className="text-red-400">
-          University of Applied Sciences & technology
+          {t("about_schoolname")}
         </motion.a>{" "}
-        where i&apos;ll soon recieve my bacholar.
+        {t("about_bacholar")}
       </motion.p>
       <motion.p variants={textVarients} className="pt-5">
-        Late 2018 i joined the development team at{" "}
+         {t("about_work")}
         <motion.a href="https://telesur.sr/" className="text-red-400">
-          Telesur
+          {t("about_workname")}
         </motion.a>{" "}
-        where I work on a wide variety of interesting and meaningful projects on
-        a daily basis.
+        {t("about_workdesc")}
       </motion.p>
     </>
   );
