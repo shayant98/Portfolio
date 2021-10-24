@@ -34,7 +34,7 @@ const Contact = () => {
       <motion.p className="mt-3 text-blue-200 text-opacity-50 text-center  2xl:text-lg lg:w-3/6">
         {t("contact_body")}
       </motion.p>
-      <motion.a className="py-10" href="mailto:shayant@tuta.io">
+      <motion.a className="py-10" href="mailto:me@shayantsital.com">
         <Button size="lg" title= {t("contact_button")} icon={<HiOutlineHand className="text-xl" />} />
       </motion.a>
     </motion.div>

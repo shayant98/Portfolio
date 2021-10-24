@@ -33,7 +33,7 @@ const Hero = () => {
         >
           {t("hero_description")}
         </motion.p>
-        <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3, duration: 0.5 }} href="mailto:shayant@tuta.io">
+        <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3, duration: 0.5 }} href="mailto:me@shayantsital.com">
           <Button title={t("hero_cta")} size="lg" />
         </motion.a>
       </div>
