@@ -33,8 +33,11 @@ const SideMenuList = ({ toggleMenu }: SideMenuListProps) => {
     },
 
   };
+
+
   return (
     <div className="py-28 px-5 flex flex-col h-screen  items-center text-blue-200 text-xl md:text-3xl justify-around">
+
       {menuOptions.map((option: IMenuOption, index) => (
         <SideMenuListItem
           key={index}

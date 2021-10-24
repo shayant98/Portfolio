@@ -1,56 +1,40 @@
-import { motion, AnimatePresence, Variants } from "framer-motion";
 import SideMenuList from "./SideMenuList";
+import { Fragment } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+const Sidemenu = ({ isOpen, toggleMenu }: SidemenuProps) => {
 
-const Sidemenu = ({ isOpen, toggleMenu }:SidemenuProps) => {
-  const backdropVariants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-    },
-  };
 
-  const sideMenuVariants: Variants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-    },
-    exit: {
-      x: '-100vw',
-      opacity: 0,
-    },
-  };
+
+
 
   return (
-    <AnimatePresence initial={false} exitBeforeEnter>
-      {isOpen ? (
-        <div>
-          <motion.div
-            onClick={() => toggleMenu(false)}
-            variants={backdropVariants}
-            initial="hidden"
-            animate="visible"
-            className="bg-navy-normal  min-h-screen h-full w-full bg-opacity-75 absolute  right-0  z-40 shadow-lg"
-          ></motion.div>
-          <motion.div
-            variants={sideMenuVariants}
-            initial="hidden"
-            animate="visible"
-            exit= "exit"
-            className="bg-navy-normal  min-h-screen h-full w-3/4 absolute  right-0  z-40 shadow-lg"
-          >
-            <motion.div className="bg-navy-normal  min-h-screen h-full w-full absolute  right-0  z-40 shadow-lg ">
-              <SideMenuList toggleMenu={toggleMenu} />
-            </motion.div>
-          </motion.div>
-        </div>
-      ) : (
-        <div></div>
-      )}
-    </AnimatePresence>
+    <>
+      {isOpen ? <Transition appear show={isOpen} as={Fragment}>
+        <Dialog
+          as="div"
+          className="fixed inset-0 z-50 overflow-y-auto "
+          onClose={(e) => toggleMenu(false)}
+        >
+          <div className="min-h-screen px-4 text-center">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <div className="bg-navy-normal w-3/4 shadow-lg  h-full z-10 absolute top-0 right-0">
+
+                <SideMenuList toggleMenu={toggleMenu} />
+              </div>
+            </Transition.Child>
+          </div>
+        </Dialog>
+      </Transition> : <div></div>  }
+    </>
+
   );
 };
 

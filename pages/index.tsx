@@ -11,7 +11,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className={` bg-navy-normal relative min-h-screen  ${menuOpen ? " h-screen overflow-hidden" : "h-full"}`}>
+    <div className={` bg-navy-normal relative min-h-screen  h-full`}>
       <Head>
         <title>Shayant Sital</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>

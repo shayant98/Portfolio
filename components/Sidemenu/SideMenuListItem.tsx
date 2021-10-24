@@ -5,7 +5,7 @@ import IMenuOption from "../../interfaces/MenuOption"
 const SideMenuListItem = ({ variants, index, option, toggleMenu }: SideMenuListItemProps) => {
   return (
     <motion.div
-      className="flex flex-col items-center text-base"
+      className="flex flex-col text-base"
       key={index}
       variants={variants}
       transition={{ delay: index * 0.2, type: "spring", stiffness: 50 }}
