@@ -94,7 +94,7 @@ const Header = ({ toggleMenu, isOpen }: HeaderProps) => {
               <Button title={t("menu_resume")} size="sm" />
             </a>
           </motion.div>
-          {/* <LanguageDropdown variants={variants} /> */}
+          <LanguageDropdown variants={variants} />
         </motion.div>
       </motion.nav>
     </>
