@@ -27,7 +27,7 @@ const Project = ({ project, flip }: CProjectProps) => {
     }
   }, [controls, inView]);
   return (
-    <motion.div ref={ref}  variants={variants} animate={controls}>
+    <motion.div ref={ref} initial="hidden" variants={variants} animate={controls}>
       <Media lessThan="lg"><MobileProject flip={flip} project={project} /></Media>
       <Media greaterThanOrEqual="lg"><DesktopProject flip={flip} project={project} /></Media>
     </motion.div>
