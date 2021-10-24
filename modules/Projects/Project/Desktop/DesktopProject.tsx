@@ -4,7 +4,8 @@ import ProjectImage from "./ProjectImage";
 
 const DesktopProject = ({ project, flip = false }: CDesktopProjectProps) => {
   return (
-    <div className="group relative  h-max mt-24 cursor-pointer hidden xl:flex ">
+    <div className="group relative  h-max mt-24 cursor-pointer  xl:flex ">
+
       <ProjectImage flip={flip} image={project.image} />
       <ProjectDescription flip={flip} project={project} />
     </div>

@@ -2,12 +2,11 @@ import IProject from "@interfaces/Project";
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { useMediaQuery } from "react-responsive";
+import { Media } from "../../../utils/media";
 import DesktopProject from "./Desktop/DesktopProject";
 import MobileProject from "./Mobile/MobileProject";
 
 const Project = ({ project, flip }: CProjectProps) => {
-  const isSmallScreen = useMediaQuery({ query: "(max-width: 1024px)" });
 
   const controls = useAnimation();
   const { ref, inView } = useInView();
@@ -28,8 +27,9 @@ const Project = ({ project, flip }: CProjectProps) => {
     }
   }, [controls, inView]);
   return (
-    <motion.div ref={ref} initial="hidden" variants={variants} animate={controls}>
-      {isSmallScreen ? <MobileProject flip={flip} project={project} /> : <DesktopProject flip={flip} project={project} />}
+    <motion.div ref={ref}  variants={variants} animate={controls}>
+      <Media lessThan="lg"><MobileProject flip={flip} project={project} /></Media>
+      <Media greaterThanOrEqual="lg"><DesktopProject flip={flip} project={project} /></Media>
     </motion.div>
   );
 };

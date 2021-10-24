@@ -14,6 +14,7 @@ export default function Home() {
     <div className={` bg-navy-normal relative min-h-screen  ${menuOpen ? " h-screen overflow-hidden" : "h-full"}`}>
       <Head>
         <title>Shayant Sital</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta
         name="description"
         content="Shayant Sital is a software engineer specializing in building (and occasionally designing) exceptional websites, applications, and everything in between."
