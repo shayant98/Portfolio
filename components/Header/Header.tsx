@@ -83,7 +83,7 @@ const Header = ({ toggleMenu, isOpen }: HeaderProps) => {
         >
           {isOpen ? <HiOutlineX className="text-red-400 text-3xl" /> : <HiMenuAlt3 className="text-red-400 text-3xl" />}
         </div>
-        <motion.div className="px-8  hidden lg:flex ">
+        <motion.div className="px-8  hidden lg:flex items-center ">
           {menuOptions.map((option, index) => (
             <HeaderOption key={index} option={option} index={index} variants={variants} />
           ))}

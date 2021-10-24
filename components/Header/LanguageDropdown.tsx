@@ -24,7 +24,7 @@ const LanguageDropdown = ({ variants }) => {
         aria-expanded="true"
         onClick={() => setDropdown(!dropdown)}
       >
-        <HiChevronDown /> {languages[lang]}
+        <HiChevronDown size={24} /> {languages[lang]}
       </motion.button>
       <div
         ref={ref}
