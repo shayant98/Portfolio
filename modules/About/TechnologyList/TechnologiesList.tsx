@@ -1,8 +1,18 @@
 import { motion, Variants } from "framer-motion";
 import TechnologiesListItem from "./TechnologiesListItem";
-
+import { DiMongodb, DiNodejs, DiReact } from "react-icons/di";
+import { SiMicrosoftazure, SiFirebase,SiFlutter,SiNextdotjs } from "react-icons/si";
+import ITechnology from "@interfaces/Technology";
 const TechnologiesList = () => {
-  const technologies = ["React", "Next.Js", "Node.Js", "MongoDB", "Flutter"];
+  const technologies: ITechnology[] = [
+    { name: "React", icon: <DiReact /> },
+    { name: "Next.Js", icon: <SiNextdotjs /> },
+    { name: "Node.Js", icon: <DiNodejs /> },
+    { name: "MongoDB", icon: <DiMongodb /> },
+    { name: "Flutter", icon: <SiFlutter /> },
+    { name: "Firebase", icon: <SiFirebase /> },
+    { name: "Azure", icon: <SiMicrosoftazure/> },
+  ];
 
   const textVarients: Variants = {
     hidden: {
