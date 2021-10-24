@@ -31,7 +31,7 @@ const Header = ({ toggleMenu, isOpen }: HeaderProps) => {
       to: "work",
     },
     {
-      title: t("menu_proj"),
+      title: t("menu_projects"),
       to: "projects",
     },
     {
