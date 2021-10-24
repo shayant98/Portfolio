@@ -38,6 +38,7 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-filters"),
+    require("tailwindcss-scrollbar"),
     require("tailwindcss-writing-mode")({
       variants: ["responsive", "hover"],
     }),
