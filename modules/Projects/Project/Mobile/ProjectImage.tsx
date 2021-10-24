@@ -3,7 +3,7 @@ import Image from "next/image";
 const ProjectImage = ({ flip, image }: CProjectImageProps) => {
   return (
     <div className={`relative z-0 ${flip && "order-last"} w-full`}>
-      <Image src={image} priority className=" mt-10 filter-grayscale" alt="Project Image"  layout="responsive"
+      <Image src={image} className=" mt-10 filter-grayscale" alt="Project Image"  layout="responsive"
        objectFit="cover"
        width={6}
        height={5}/>

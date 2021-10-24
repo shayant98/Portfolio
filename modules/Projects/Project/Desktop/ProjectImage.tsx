@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ProjectImage = ({ flip, image }: CProjectImageProps) => {
   return (
-    <motion.div whileHover={{ y: 10 }} className={`relative ${flip && "order-last"} w-1/2`}>
+    <motion.div whileHover={{ y: 10 }} className={`relative ${flip && "order-last"} lg:w-3/4 xl:w-1/2`}>
       <motion.div className={`h-full w-full absolute top-4 ${flip ? "left-4" : "right-4"} border-4  border-red-400  rounded-sm`}></motion.div>
 
       <Image src={image} layout="fill" objectFit="cover" objectPosition="center" alt="headhsot" className=" relative " />
