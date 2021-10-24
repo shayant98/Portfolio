@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 
 const KeyPointListitem = ({ index, point }: {index: number, point: string}) => {
   return (

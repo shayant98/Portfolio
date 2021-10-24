@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectImage from "./ProjectImage";
 import ProjectDescription from "./ProjectDescription/ProjectDescription";
 import IProject from "@interfaces/Project";

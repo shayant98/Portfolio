@@ -1,4 +1,3 @@
-import React from "react";
 import { Media } from "../../utils/media";
 import SocialList from "./SocialList";
 

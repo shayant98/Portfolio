@@ -4,7 +4,10 @@ import { useInView } from "react-intersection-observer";
 import TechnologiesList from "./TechnologyList/TechnologiesList";
 import AboutDescription from "./AboutDescription";
 import AboutImage from "./AboutImage";
+import useTranslation from "next-translate/useTranslation";
 const About = () => {
+
+  const {t} = useTranslation("common")
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
@@ -30,7 +33,7 @@ const About = () => {
     <motion.div ref={ref} className="grid  lg:grid-cols-2 gap-4" initial="hidden" animate={controls} variants={varients}>
       <motion.div className="leading-6 text-blue-200 text-opacity-50 2xl:text-lg">
         <AboutDescription />
-        <motion.p className="mt-4">Here are a few technologies I&apos;ve been working with recently:</motion.p>
+        <motion.p className="mt-4">{t("about_tech_title")}</motion.p>
         <TechnologiesList />
       </motion.div>
       <AboutImage />

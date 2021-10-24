@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import Button from "../Button";
 import SideMenuListItem from "./SideMenuListItem";
 import IMenuOption from "../../interfaces/MenuOption"

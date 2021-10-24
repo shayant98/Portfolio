@@ -1,4 +1,3 @@
-import React from "react";
 import Project from "./Project/Project";
 import { motion } from "framer-motion";
 import IProject from "@interfaces/Project";

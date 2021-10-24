@@ -1,4 +1,3 @@
-import React from "react";
 import About from "../../modules/About/About";
 import Contact from "../../modules/Contact/Contact";
 import Hero from "../../modules/Hero/Hero";

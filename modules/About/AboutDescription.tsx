@@ -1,7 +1,9 @@
 import { motion, Variants } from "framer-motion";
-import React from "react";
+import useTranslation from "next-translate/useTranslation";
 
 const AboutDescription = () => {
+    const {t} = useTranslation("common")
+
   const textVarients: Variants = {
     hidden: {
       opacity: 0,

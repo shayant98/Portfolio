@@ -1,5 +1,4 @@
 import { motion, Variants } from "framer-motion";
-import React from "react";
 import Image from "next/image";
 import Portrait from "../../public/images/portrait.webp";
 const AboutImage = () => {

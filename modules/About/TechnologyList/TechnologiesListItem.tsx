@@ -1,5 +1,4 @@
 import { motion, Variants } from "framer-motion";
-import React from "react";
 
 const TechnologiesListItem = ({ index, variants, technology }: TechnologiesListItemProps) => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { FaAppStoreIos, FaGooglePlay } from "react-icons/fa";
 import IProject from "@interfaces/Project";

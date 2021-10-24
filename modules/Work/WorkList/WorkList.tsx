@@ -1,6 +1,5 @@
 import IWork from "@interfaces/Work";
 import { motion } from "framer-motion";
-import React from "react";
 import WorkListItem from "./WorkListItem";
 
 const WorkList = ({ jobs, selectedJob, setselectedJob }: WorkListProps) => {
