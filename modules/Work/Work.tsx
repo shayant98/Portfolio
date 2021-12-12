@@ -25,10 +25,17 @@ const Work = () => {
 
   const work: IWork[] = [
     {
+      name: "VSH-Tech BV",
+      position: "Full Stack Software Developer",
+      start: "Nov 2018",
+      end: null,
+      keyPoints: ["Responsible for building and maintaining mobile applications build on Flutter  "],
+    },
+    {
       name: "Telesur",
       position: "Software Developer",
       start: "Nov 2018",
-      end: null,
+      end: "Nov 2021",
       keyPoints: [
         "Responsible for building and maintaining applications used by 100+ Telesur personal ",
         "Responsible for implementing the complete CI/CD workflow, used by the development team ",
@@ -52,18 +59,8 @@ const Work = () => {
     }
   }, [controls, inView]);
   return (
-    <motion.div
-      ref={ref}
-      className="flex flex-col  md:flex-row gap-8"
-      initial="hidden"
-      animate={controls}
-      variants={varients}
-    >
-      <WorkList
-        setselectedJob={setselectedJob}
-        selectedJob={selectedJob}
-        jobs={work}
-      />
+    <motion.div ref={ref} className="flex flex-col  md:flex-row gap-8" initial="hidden" animate={controls} variants={varients}>
+      <WorkList setselectedJob={setselectedJob} selectedJob={selectedJob} jobs={work} />
       <WorkDetails job={work[selectedJob]} />
     </motion.div>
   );
