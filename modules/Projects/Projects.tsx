@@ -4,7 +4,7 @@ import IProject from "@interfaces/Project";
 import useTranslation from "next-translate/useTranslation";
 
 const Projects = () => {
-  const {t} = useTranslation("common")
+  const { t } = useTranslation("common");
   const projects: IProject[] = [
     {
       title: t("project_fp_1_title"),
@@ -16,19 +16,17 @@ const Projects = () => {
     },
     {
       title: t("project_fp_2_title"),
-      github: "https://github.com/shayant98/electroshop",
-      url: "https://electroshopmern.herokuapp.com/",
+      github: "https://github.com/shayant98/RecyclePointLocator",
       description: t("project_fp_2_desc"),
-      technologies: ["React", "Node.Js", "MongoDB", "Express", "React-Query"],
-      image: "/images/electroshop.webp",
+      technologies: ["Flutter", "Firebase"],
+      image: "/images/rpl.webp",
     },
     {
       title: t("project_fp_3_title"),
       description: t("project_fp_3_desc"),
-      technologies: ["Flutter", "Firebase", "NodeJS"],
-      image: "/images/covid.webp",
-      android: "https://play.google.com/store/apps/details?id=com.radiotrishul.tbn",
-      ios: "https://apps.apple.com/us/app/trishul-broadcasting-network/id1530443572",
+      technologies: ["React", "NodeJS"],
+      image: "/images/bijles.webp",
+      url: "https://www.bijles.sr/",
     },
   ];
 
@@ -45,17 +43,6 @@ const Projects = () => {
         <motion.a href="https://github.com/shayant98?tab=repositories" className="font-mono border-b border-navy-normal hover:border-red-400 transition delay-200 ease-in-out">
           {t("projects_interesting_link")}
         </motion.a>
-        {/* <div className="grid grid-cols-3 gap-3 grid-rows-3">
-          <div className="w-72 h-80  bg-navy-light"></div>
-          <div className="w-72 h-80  bg-navy-light"></div>
-          <div className="w-72 h-80  bg-navy-light"></div>
-          <div className="w-72 h-80  bg-navy-light"></div>
-          <div className="w-72 h-80  bg-navy-light"></div>
-          <div className="w-72 h-80  bg-navy-light"></div>
-          <div className="w-72 h-80  bg-navy-light"></div>
-          <div className="w-72 h-80  bg-navy-light"></div>
-          <div className="w-72 h-80  bg-navy-light"></div>
-        </div> */}
       </div>
     </div>
   );

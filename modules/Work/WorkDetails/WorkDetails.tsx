@@ -2,7 +2,7 @@ import { motion, Variants } from "framer-motion";
 import KeyPointsList from "./KeyPointsList";
 import IWork from "@interfaces/Work";
 
-const WorkDetails = ({ job }: {job: IWork}) => {
+const WorkDetails = ({ job }: { job: IWork }) => {
   const detailsVariants: Variants = {
     hidden: {
       x: "100vw",
