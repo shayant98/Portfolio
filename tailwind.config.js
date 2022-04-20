@@ -13,8 +13,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: "Nunito, San Francisco, sans-serif",
-      mono: "Ubuntu Mono, San Francisco, sans-serif",
+      sans: "Poppins, sans-serif",
+      mono: "Overpass Mono,  monospace",
     },
     filter: {
       // defaults to {}
