@@ -29,7 +29,10 @@ const Work = () => {
       position: "Full Stack Software Developer",
       start: "Nov 2018",
       end: null,
-      keyPoints: ["Responsible for building and maintaining mobile applications build on Flutter  "],
+      keyPoints: [
+        "Responsible for building and maintaining the Field Service Management Mobile app built for VSH-Trading",
+        "Working on the Warehouse Management Service mobile app for Center Suite",
+      ],
     },
     {
       name: "Telesur",
