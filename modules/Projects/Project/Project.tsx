@@ -35,7 +35,7 @@ const Project = ({ project, flip }: CProjectProps) => {
 
 interface CProjectProps {
   project: IProject;
-  flip?: boolean;
+  flip: boolean;
 }
 
 export default Project;

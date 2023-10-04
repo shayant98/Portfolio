@@ -17,11 +17,14 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-intersection-observer": "^9.5.2",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "@types/node": "^20.8.2",
-    "@types/react": "^18.2.24",
+    "@types/react": "18.2.20",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.50.0",
     "eslint-config-next": "^13.5.4",

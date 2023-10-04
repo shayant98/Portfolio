@@ -2,13 +2,14 @@ import useTranslation from "next-translate/useTranslation";
 import { motion } from "framer-motion";
 import Button from "../../components/Button";
 import { Link } from "react-scroll";
+import { ReactNode } from "react";
 const Hero = () => {
   const { t } = useTranslation("common");
   return (
     <>
       <div className="text-left">
         <motion.h1 className="mt-40  lg:mt-8 font-mono font-sm text-red-400" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1, duration: 0.5 }}>
-          Fawaka, {t("hero_greeting")}
+          Fawaka, {t("hero_greeting") as ReactNode}
         </motion.h1>
         <motion.h2
           className="text-4xl my-3  md:text-6xl md:my-8   lg:text-7xl lg:my-8  text-red-300 font-bold"
@@ -32,7 +33,7 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.5 }}
         >
-          {t("hero_description")}{" "}
+          {t("hero_description") as ReactNode}
           <div>
             <Link
               className=" text-red-400 cursor-pointer relative before:content-[''] before:absolute  before:block before:w-full before:h-[1px]
