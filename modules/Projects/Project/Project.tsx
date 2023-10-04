@@ -7,7 +7,6 @@ import DesktopProject from "./Desktop/DesktopProject";
 import MobileProject from "./Mobile/MobileProject";
 
 const Project = ({ project, flip }: CProjectProps) => {
-
   const controls = useAnimation();
   const { ref, inView } = useInView();
   const variants = {
@@ -28,15 +27,15 @@ const Project = ({ project, flip }: CProjectProps) => {
   }, [controls, inView]);
   return (
     <motion.div ref={ref} initial="hidden" variants={variants} animate={controls}>
-      <Media lessThan="md"><MobileProject flip={flip} project={project} /></Media>
-      <Media greaterThanOrEqual="md"><DesktopProject flip={flip} project={project} /></Media>
+      <MobileProject flip={flip} project={project} />
+      <DesktopProject flip={flip} project={project} />
     </motion.div>
   );
 };
 
 interface CProjectProps {
-  project: IProject
-  flip?: boolean
+  project: IProject;
+  flip?: boolean;
 }
 
 export default Project;

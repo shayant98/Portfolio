@@ -1,6 +1,6 @@
 module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./modules/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media", // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -13,8 +13,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: "Poppins, sans-serif",
-      mono: "Overpass Mono,  monospace",
+      sans: "Calibre,Inter,San Francisco,SF Pro Text,-apple-system,system-ui,sans-serif",
+      mono: "SF Mono,Fira Code,Fira Mono,Roboto Mono,monospace",
     },
     filter: {
       // defaults to {}
@@ -37,7 +37,6 @@ module.exports = {
     backdropFilter: ["responsive", "hover"], // defaults to ['responsive']
   },
   plugins: [
-    require("tailwindcss-filters"),
     require("tailwindcss-scrollbar"),
     require("tailwindcss-writing-mode")({
       variants: ["responsive", "hover"],

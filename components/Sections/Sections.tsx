@@ -7,7 +7,7 @@ import Work from "../../modules/Work/Work";
 import useTranslation from "next-translate/useTranslation";
 
 const Sections = () => {
-  const {t} = useTranslation("common")
+  const { t } = useTranslation("common");
   return (
     <main className=" px-6 md:px-20 lg:px-40 m-auto min-h-screen max-w-screen-2xl w-full overflow-hidden flex flex-col">
       <div id="home">

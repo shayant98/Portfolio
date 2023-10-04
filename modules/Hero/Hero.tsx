@@ -1,8 +1,9 @@
-import useTranslation from 'next-translate/useTranslation'
+import useTranslation from "next-translate/useTranslation";
 import { motion } from "framer-motion";
 import Button from "../../components/Button";
+import { Link } from "react-scroll";
 const Hero = () => {
-    const { t } = useTranslation('common')
+  const { t } = useTranslation("common");
   return (
     <>
       <div className="text-left">
@@ -31,7 +32,19 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.3, duration: 0.5 }}
         >
-          {t("hero_description")}
+          {t("hero_description")}{" "}
+          <div>
+            <Link
+              className=" text-red-400 cursor-pointer relative before:content-[''] before:absolute  before:block before:w-full before:h-[1px]
+              before:bottom-0 before:left-0 before:bg-red-400
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300"
+              to="experience"
+              smooth={true}
+            >
+              {t("hero_company")}
+            </Link>
+          </div>
         </motion.p>
         <motion.a initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3, duration: 0.5 }} href="mailto:me@shayantsital.com">
           <Button title={t("hero_cta")} size="lg" />

@@ -7,12 +7,20 @@ const Projects = () => {
   const { t } = useTranslation("common");
   const projects: IProject[] = [
     {
-      title: t("project_fp_1_title"),
-      github: "https://github.com/shayant98/covid19Tracker",
-      url: "https://covid19trackershayant.herokuapp.com/",
+      title: "Penpal",
+      github: "https://github.com/shayant98/penpal",
+      url: "https://penpal.shayant.com",
       description: t("project_fp_1_desc"),
-      technologies: ["HTML", "Javascript(ES6)", "Node.Js"],
+      technologies: ["NEXT.JS", "TRPC", "STRIPE"],
       image: "/images/covid.webp",
+    },
+    {
+      title: "Easy Tools",
+      github: "https://github.com/shayant98/easy-tools",
+      url: "https://tools.shayant.com",
+      description: "NEXT",
+      technologies: ["NEXT.JS", "TRPC", "STRIPE", "AI"],
+      image: "/images/rpl.webp",
     },
     {
       title: t("project_fp_2_title"),
@@ -20,13 +28,6 @@ const Projects = () => {
       description: t("project_fp_2_desc"),
       technologies: ["Flutter", "Firebase"],
       image: "/images/rpl.webp",
-    },
-    {
-      title: t("project_fp_3_title"),
-      description: t("project_fp_3_desc"),
-      technologies: ["React", "NodeJS"],
-      image: "/images/bijles.webp",
-      url: "https://www.bijles.sr/",
     },
   ];
 

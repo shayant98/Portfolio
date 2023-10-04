@@ -1,24 +1,15 @@
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 const Social = () => {
   return (
-    <div
-      className="fixed left text-white bottom-0 left-5 w-12 z-10 hidden md:block"
-      aria-orientation="vertical"
-    >
-      <div className="flex flex-col items-center relative text-navy-light">
+    <div className="fixed left text-white bottom-0 left-5 w-12 z-10 hidden md:block" aria-orientation="vertical">
+      <div className="flex flex-col items-center relative ">
         <ul>
-          <a
-            href="https://github.com/shayant98"
-            className="hover:text-red-400 transition ease-in duration-200 "
-          >
+          <a href="https://github.com/shayant98" className="hover:text-red-400 transition ease-in duration-200 ">
             <li className="py-4">
               <FiGithub className="text-2xl" />
             </li>
           </a>
-          <a
-            href="https://linkedin.com/in/shayant-sital"
-            className="hover:text-red-400 transition ease-in duration-200 "
-          >
+          <a href="https://linkedin.com/in/shayant-sital" className="hover:text-red-400 transition ease-in duration-200 ">
             <li>
               <FiLinkedin className="text-2xl" />
             </li>

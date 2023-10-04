@@ -1,19 +1,19 @@
-import { Menu,Transition } from "@headlessui/react";
+import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { HiChevronDown } from "react-icons/hi";
 import { MdOutlineLanguage } from "react-icons/md";
-import setLanguage from 'next-translate/setLanguage'
+import setLanguage from "next-translate/setLanguage";
 import useTranslation from "next-translate/useTranslation";
 const LanguageDropdown = ({ variants }) => {
-  const { t } = useTranslation("common")
+  const { t } = useTranslation("common");
   const languages = ["EN", "NL"];
 
   return (
     <>
-      <Menu as="div" className="relative inline-block text-left">
+      <Menu as="div" className="relative inline-block text-left text-xs">
         <div>
           <Menu.Button className=" inline-flex items-center mx-7 mt-3 text-navy-light hover:text-red-400  transition ease-in duration-200 cursor-pointer">
-            <HiChevronDown size={24}/>
+            <HiChevronDown size={24} />
             {t("menu_language").toUpperCase()}
           </Menu.Button>
         </div>
@@ -29,12 +29,17 @@ const LanguageDropdown = ({ variants }) => {
           <Menu.Items className="absolute right-0 w-56 mt-5 origin-top-right bg-navy-light divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ">
             <div className="px-1 py-1 ">
               {languages.map((lang, index) => {
-                return <Menu.Item key={index}>
-                <button onClick={async () => await setLanguage(lang.toLowerCase())} className="text-white group flex rounded-md items-center w-full px-2 py-2 text-sm hover:bg-red-400 transition duration-200">
-                  <MdOutlineLanguage size={24} className="mr-2" />
-                  {lang}
-                </button>
-              </Menu.Item>
+                return (
+                  <Menu.Item key={index}>
+                    <button
+                      onClick={async () => await setLanguage(lang.toLowerCase())}
+                      className="text-white group flex rounded-md items-center w-full px-2 py-2 text-sm hover:bg-red-400 transition duration-200"
+                    >
+                      <MdOutlineLanguage size={24} className="mr-2" />
+                      {lang}
+                    </button>
+                  </Menu.Item>
+                );
               })}
             </div>
           </Menu.Items>
