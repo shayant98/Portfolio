@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { motion, Variants } from "framer-motion";
 import Button from "../Button";
 import HeaderOption from "./HeaderOption";
