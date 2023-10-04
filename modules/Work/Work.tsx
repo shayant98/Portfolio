@@ -30,8 +30,9 @@ const Work = () => {
       start: "Nov 2018",
       end: null,
       keyPoints: [
-        "Responsible for building and maintaining the Field Service Management Mobile app built for VSH-Trading",
-        "Working on the Warehouse Management Service mobile app for Center Suite",
+        "Spearheaded development development of crucial pipelines and CI/CD workflows",
+        "Lead development on the Center Customer Webportal for easy packge tracking for 1000+ users daily",
+        "Lead architecture design and planning for multiple crucial systems on Azure Cloud",
       ],
     },
     {
@@ -42,16 +43,6 @@ const Work = () => {
       keyPoints: [
         "Responsible for building and maintaining applications used by 100+ Telesur personal ",
         "Responsible for implementing the complete CI/CD workflow, used by the development team ",
-      ],
-    },
-    {
-      name: "Ministry of Finance",
-      position: "Developer",
-      start: "Mar 2018",
-      end: "Nov 2018",
-      keyPoints: [
-        "Built a complete internal webapplication for sharing office updates & easy access to company personal information",
-        "Responsible for maintaining internal web-applications",
       ],
     },
   ];
